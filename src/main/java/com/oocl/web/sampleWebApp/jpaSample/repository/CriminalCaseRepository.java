@@ -21,4 +21,7 @@ public interface CriminalCaseRepository extends JpaRepository<CriminalCase,Long>
 
     @Override
     List<CriminalCase> findAll(Sort sort);
+
+    List<CriminalCase> findCriminalCasesByName(String name);
+
 }

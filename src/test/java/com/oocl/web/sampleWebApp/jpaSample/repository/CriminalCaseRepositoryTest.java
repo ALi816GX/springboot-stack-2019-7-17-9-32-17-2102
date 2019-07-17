@@ -75,5 +75,26 @@ public class CriminalCaseRepositoryTest {
     }
 
 
+    @Test
+    public void should_return_CriminalCases_when_call_findCriminalCasesByName_given_name(){
+
+        criminalCaseRepository.save(new CriminalCase("Leo",System.currentTimeMillis()));
+        criminalCaseRepository.save(new CriminalCase("Leo1",System.currentTimeMillis()));
+        criminalCaseRepository.save(new CriminalCase("Leo",System.currentTimeMillis()));
+        criminalCaseRepository.save(new CriminalCase("Leo1",System.currentTimeMillis()));
+
+        List<CriminalCase> list = criminalCaseRepository.findCriminalCasesByName("Leo");
+
+        Assertions.assertEquals(2, list.size());
+
+
+    }
+
+
+
+
+
+
+
 
 }

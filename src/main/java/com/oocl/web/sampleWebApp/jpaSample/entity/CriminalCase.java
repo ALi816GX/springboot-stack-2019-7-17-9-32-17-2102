@@ -34,6 +34,11 @@ public class CriminalCase {
     public CriminalCase() {
     }
 
+    public CriminalCase(@Length(max = 255) @NotNull String name, @NotNull Long millTime) {
+        this.name = name;
+        this.millTime = millTime;
+    }
+
     public Long getId() {
         return id;
     }
