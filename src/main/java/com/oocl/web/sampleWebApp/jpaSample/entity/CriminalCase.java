@@ -29,8 +29,12 @@ public class CriminalCase {
     private Long millTime;
 
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     private CriminalDetail criminalDetail;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @NotNull
+    private Procuratorat procuratorat;
 
 
     public CriminalCase() {
@@ -75,6 +79,14 @@ public class CriminalCase {
 
     public void setCriminalDetail(CriminalDetail criminalDetail) {
         this.criminalDetail = criminalDetail;
+    }
+
+    public Procuratorat getProcuratorat() {
+        return procuratorat;
+    }
+
+    public void setProcuratorat(Procuratorat procuratorat) {
+        this.procuratorat = procuratorat;
     }
 
     @Override

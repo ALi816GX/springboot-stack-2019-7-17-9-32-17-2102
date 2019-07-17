@@ -2,6 +2,7 @@ package com.oocl.web.sampleWebApp.jpaSample.repository;
 
 import com.oocl.web.sampleWebApp.jpaSample.entity.CriminalCase;
 import com.oocl.web.sampleWebApp.jpaSample.entity.CriminalDetail;
+import com.oocl.web.sampleWebApp.jpaSample.entity.Procuratorat;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
@@ -131,6 +132,24 @@ public class CriminalCaseRepositoryTest {
 
         Assertions.assertNull(result.getCriminalDetail().getObjectiveContent());
 
+
+    }
+
+    @Test
+    public void should_return_entity_when_call_save_CriminalCase_with_procuratorat(){
+
+        CriminalCase a = criminalCaseRepository.save(new CriminalCase("Leo",System.currentTimeMillis()));
+        criminalCaseRepository.save(new CriminalCase("Leo1",System.currentTimeMillis()));
+
+        Procuratorat procuratorat = new Procuratorat();
+        procuratorat.setName("kkkk");
+        CriminalCase saveCri = new CriminalCase();
+        saveCri.setId(a.getId());
+        saveCri.setProcuratorat(procuratorat);
+
+        CriminalCase result = criminalCaseRepository.save(saveCri);
+
+        Assertions.assertEquals("kkkk",result.getProcuratorat().getName());
 
     }
 
