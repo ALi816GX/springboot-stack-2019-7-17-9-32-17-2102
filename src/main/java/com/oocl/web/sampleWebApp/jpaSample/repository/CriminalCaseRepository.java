@@ -24,4 +24,6 @@ public interface CriminalCaseRepository extends JpaRepository<CriminalCase,Long>
 
     List<CriminalCase> findCriminalCasesByName(String name);
 
+
+
 }

@@ -65,4 +65,13 @@ public class CriminalDetail {
         this.objectiveContent = objectiveContent;
     }
 
+
+    @Override
+    public String toString() {
+        return "CriminalDetail{" +
+                "id=" + id +
+                ", subjectiveContent='" + subjectiveContent + '\'' +
+                ", objectiveContent='" + objectiveContent + '\'' +
+                '}';
+    }
 }

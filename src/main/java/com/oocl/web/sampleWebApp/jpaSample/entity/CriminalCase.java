@@ -2,10 +2,7 @@ package com.oocl.web.sampleWebApp.jpaSample.entity;
 
 import org.hibernate.validator.constraints.Length;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
 /**
@@ -31,12 +28,21 @@ public class CriminalCase {
     @NotNull
     private Long millTime;
 
+
+    @OneToOne
+    private CriminalDetail criminalDetail;
+
+
     public CriminalCase() {
     }
 
     public CriminalCase(@Length(max = 255) @NotNull String name, @NotNull Long millTime) {
         this.name = name;
         this.millTime = millTime;
+    }
+
+    public CriminalCase(CriminalDetail criminalDetail) {
+        this.criminalDetail = criminalDetail;
     }
 
     public Long getId() {
@@ -63,12 +69,21 @@ public class CriminalCase {
         this.millTime = millTime;
     }
 
+    public CriminalDetail getCriminalDetail() {
+        return criminalDetail;
+    }
+
+    public void setCriminalDetail(CriminalDetail criminalDetail) {
+        this.criminalDetail = criminalDetail;
+    }
+
     @Override
     public String toString() {
         return "CriminalCase{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", millTime=" + millTime +
+                ", criminalDetail=" + criminalDetail +
                 '}';
     }
 }

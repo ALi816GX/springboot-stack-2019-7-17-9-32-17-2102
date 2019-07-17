@@ -1,6 +1,7 @@
 package com.oocl.web.sampleWebApp.jpaSample.repository;
 
 import com.oocl.web.sampleWebApp.jpaSample.entity.CriminalCase;
+import com.oocl.web.sampleWebApp.jpaSample.entity.CriminalDetail;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
@@ -29,6 +30,9 @@ public class CriminalCaseRepositoryTest {
 
     @Autowired
     private CriminalCaseRepository criminalCaseRepository;
+
+    @Autowired
+    private CriminalDetailsRepository criminalDetailsRepository;
 
     @Test
     public void should_return_singleEntity_when_call_findCriminalCaseById_given_id(){
@@ -105,6 +109,27 @@ public class CriminalCaseRepositoryTest {
         criminalCaseRepository.deleteById(criminalCase.getId());
 
         Assertions.assertNull(criminalCaseRepository.findCriminalCaseById(criminalCase.getId()));
+
+
+    }
+
+
+    @Test
+    public void should_return_none_when_call_save_CriminalCase_with_Criminal_Detail(){
+
+        CriminalCase a = criminalCaseRepository.save(new CriminalCase("Leo",System.currentTimeMillis()));
+        criminalCaseRepository.save(new CriminalCase("Leo1",System.currentTimeMillis()));
+
+        CriminalDetail criminalDetail = new CriminalDetail("Messi1","Messi2");
+        CriminalCase saveCri = new CriminalCase(criminalDetail);
+        saveCri.setId(a.getId());
+
+        CriminalCase result = criminalCaseRepository.save(saveCri);
+//
+//        System.out.println("===="+result.getCriminalDetail().toString());
+
+
+        Assertions.assertNull(result.getCriminalDetail().getObjectiveContent());
 
 
     }
