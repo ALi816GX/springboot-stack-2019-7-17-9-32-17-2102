@@ -92,6 +92,24 @@ public class CriminalCaseRepositoryTest {
 
 
 
+    @Test
+    public void should_return_none_when_call_deleteById_given_id(){
+
+        criminalCaseRepository.save(new CriminalCase("Leo",System.currentTimeMillis()));
+        criminalCaseRepository.save(new CriminalCase("Leo1",System.currentTimeMillis()));
+
+        CriminalCase criminalCase = criminalCaseRepository.save(new CriminalCase("Leo",System.currentTimeMillis()));
+
+        criminalCaseRepository.save(new CriminalCase("Leo1",System.currentTimeMillis()));
+
+        criminalCaseRepository.deleteById(criminalCase.getId());
+
+        Assertions.assertNull(criminalCaseRepository.findCriminalCaseById(criminalCase.getId()));
+
+
+    }
+
+
 
 
 
