@@ -13,4 +13,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
  */
 public interface ProcuratoratRepository extends JpaRepository<Procuratorat,Long> {
 
+    Procuratorat findProcuratoratById(Long id);
+
 }
