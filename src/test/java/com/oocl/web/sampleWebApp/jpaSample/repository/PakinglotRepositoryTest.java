@@ -7,9 +7,13 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import static org.junit.jupiter.api.Assertions.*;
+import java.util.List;
 
 /**
  * Created with IDEA
@@ -52,6 +56,26 @@ public class PakinglotRepositoryTest {
         pakinglotRepository.deleteById(result.getId());
 
         Assertions.assertNull(pakinglotRepository.findParkinglotById(result.getId()));
+
+    }
+
+
+    @Test
+    public void should_return_list_when_call_findPakinglotsByPaging_given_none(){
+
+
+        for (int i = 0; i < 20; i++) {
+            pakinglotRepository.save(new Parkinglot("leo"+(20-i),30-i,i));
+        }
+
+
+        Sort sort = new Sort(Sort.Direction.ASC,"id");
+
+        Pageable pageable  = PageRequest.of(0,15,sort);
+
+        Page<Parkinglot> result = pakinglotRepository.findAll(pageable);
+
+        Assertions.assertEquals(15,result.getContent().size());
 
     }
 
