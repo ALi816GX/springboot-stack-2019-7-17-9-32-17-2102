@@ -48,6 +48,25 @@ public class ParkinglotController {
 
     }
 
+    @DeleteMapping("/{id}")
+    public void deleteParkinglots(@PathVariable int id) {
+
+        log.info("delete parkinglot by id");
+
+        parkinglotRepository.deleteById((long) id);
+
+    }
+
+    @PutMapping
+    public Parkinglot updateParkinglots(@RequestBody Parkinglot parkinglot){
+        log.info("update parkinglot by id"+parkinglot.toString());
+
+        return parkinglotRepository.save(parkinglot);
+    }
+
+
+
+
 
 
 
