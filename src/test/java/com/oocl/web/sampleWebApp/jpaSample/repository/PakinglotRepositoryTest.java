@@ -80,6 +80,22 @@ public class PakinglotRepositoryTest {
     }
 
 
+    @Test
+    public void should_return_parkinglot_when_call_find_pakinglot_by_id_guven_id(){
+
+        Parkinglot parkinglot = new Parkinglot("leo",10,1);
+
+        Parkinglot result = pakinglotRepository.save(parkinglot);
+
+
+        Assertions.assertEquals("leo",result.getName());
+
+
+
+
+    }
+
+
 
 
 
