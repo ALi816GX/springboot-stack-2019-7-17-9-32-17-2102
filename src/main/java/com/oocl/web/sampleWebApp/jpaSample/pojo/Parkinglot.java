@@ -35,5 +35,9 @@ public class Parkinglot {
 
     private int index;
 
-
+    public Parkinglot(String name, @Length int capacity, int index) {
+        this.name = name;
+        this.capacity = capacity;
+        this.index = index;
+    }
 }

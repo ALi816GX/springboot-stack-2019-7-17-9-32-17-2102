@@ -1,5 +1,6 @@
 package com.oocl.web.sampleWebApp.jpaSample.repository;
 
+import com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
@@ -8,44 +9,36 @@ import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabas
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Created with IDEA
  *
  * @author:linGuangXiong
- * @Date:2019/7/17
- * @Time:23:36
+ * @Date:2019/7/18
+ * @Time:23:18
  * @description:
  */
 
 @RunWith(SpringRunner.class)
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
-public class CriminalDetailRepositoryTest {
+public class PakinglotRepositoryTest {
+
 
     @Autowired
-    private CriminalDetailsRepository criminalDetailsRepository;
+    private PakinglotRepository pakinglotRepository;
 
     @Test
-    public void should_return_criminalDetail_when_call_findCriminalDetailById_given_id(){
+    public void should_return_parkinglot_when_call_addParkinglot_given_pakinglot(){
 
+        Parkinglot parkinglot = new Parkinglot("leo",10,1);
 
-        CriminalDetail criminalDetail = new CriminalDetail("test1","test2");
+        Parkinglot result = pakinglotRepository.save(parkinglot);
 
-
-        CriminalDetail saveResult = criminalDetailsRepository.save(criminalDetail);
-
-
-        CriminalDetail result = criminalDetailsRepository.findCriminalDetailById(saveResult.getId());
-
-        //then
-        Assertions.assertEquals("test2", result.getObjectiveContent());
+        Assertions.assertEquals("leo", result.getName());
 
     }
-
-
-
-
 
 
 }
