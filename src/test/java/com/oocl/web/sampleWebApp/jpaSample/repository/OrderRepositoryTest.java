@@ -30,18 +30,21 @@ import static org.junit.jupiter.api.Assertions.*;
 public class OrderRepositoryTest {
 
 
-//    @Autowired
-//    private OrderRepository orderRepository;
-//
-//    @Test
-//    public void should_return_order_when_call_add_given_pakinglot(){
-//
-//        Order order = new Order("111","222","333",new Date(),new Date(),);
-//
-//        Order result = orderRepository.save(order);
-//
-//        Assertions.assertEquals("222", result.getParkingName());
-//
-//    }
+    @Autowired
+    private OrderRepository orderRepository;
+
+    @Test
+    public void should_return_order_when_call_add_order_given_order(){
+
+        Order order = new Order("111","222","333",new Date(),new Date());
+
+        Order result = orderRepository.save(order);
+
+        Assertions.assertEquals("222", result.getParkingName());
+
+    }
+
+
+
 
 }

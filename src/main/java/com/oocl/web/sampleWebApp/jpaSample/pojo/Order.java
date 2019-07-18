@@ -46,7 +46,7 @@ public class Order {
     private int state = 1;
 
 
-    public Order(String orderNum, String parkingName, String carNum, Date createDate, Date endDate, int state) {
+    public Order(String orderNum, String parkingName, String carNum, Date createDate, Date endDate) {
         this.orderNum = orderNum;
         this.parkingName = parkingName;
         this.carNum = carNum;
