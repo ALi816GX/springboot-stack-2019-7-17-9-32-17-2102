@@ -1,5 +1,7 @@
 package com.oocl.web.sampleWebApp.jpaSample.entity;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.*;
@@ -15,6 +17,8 @@ import javax.validation.constraints.NotNull;
  */
 
 @Entity
+@Data
+@NoArgsConstructor
 public class CriminalCase {
 
     @Id
@@ -37,8 +41,6 @@ public class CriminalCase {
     private Procuratorat procuratorat;
 
 
-    public CriminalCase() {
-    }
 
     public CriminalCase(@Length(max = 255) @NotNull String name, @NotNull Long millTime) {
         this.name = name;
@@ -49,53 +51,6 @@ public class CriminalCase {
         this.criminalDetail = criminalDetail;
     }
 
-    public Long getId() {
-        return id;
-    }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Long getMillTime() {
-        return millTime;
-    }
-
-    public void setMillTime(Long millTime) {
-        this.millTime = millTime;
-    }
-
-    public CriminalDetail getCriminalDetail() {
-        return criminalDetail;
-    }
-
-    public void setCriminalDetail(CriminalDetail criminalDetail) {
-        this.criminalDetail = criminalDetail;
-    }
-
-    public Procuratorat getProcuratorat() {
-        return procuratorat;
-    }
-
-    public void setProcuratorat(Procuratorat procuratorat) {
-        this.procuratorat = procuratorat;
-    }
-
-    @Override
-    public String toString() {
-        return "CriminalCase{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", millTime=" + millTime +
-                ", criminalDetail=" + criminalDetail +
-                '}';
-    }
 }

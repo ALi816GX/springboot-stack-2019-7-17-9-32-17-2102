@@ -1,5 +1,7 @@
 package com.oocl.web.sampleWebApp.jpaSample.entity;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.Entity;
@@ -18,6 +20,8 @@ import javax.validation.constraints.NotNull;
  */
 
 @Entity
+@Data
+@NoArgsConstructor
 public class Inquisitor {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -27,26 +31,8 @@ public class Inquisitor {
     @NotNull
     private String name;
 
-    public Inquisitor() {
-    }
-
     public Inquisitor(@Length(max = 255) @NotNull String name) {
         this.name = name;
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 }

@@ -1,5 +1,7 @@
 package com.oocl.web.sampleWebApp.jpaSample.entity;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.Entity;
@@ -18,6 +20,8 @@ import javax.validation.constraints.NotNull;
  */
 
 @Entity
+@Data
+@NoArgsConstructor
 public class CriminalDetail {
 
     @Id
@@ -32,46 +36,10 @@ public class CriminalDetail {
     @NotNull
     private String objectiveContent;
 
-    public CriminalDetail() {
-
-    }
 
     public CriminalDetail(@Length(max = 255) @NotNull String subjectiveContent, @Length(max = 255) @NotNull String objectiveContent) {
         this.subjectiveContent = subjectiveContent;
         this.objectiveContent = objectiveContent;
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getSubjectiveContent() {
-        return subjectiveContent;
-    }
-
-    public void setSubjectiveContent(String subjectiveContent) {
-        this.subjectiveContent = subjectiveContent;
-    }
-
-    public String getObjectiveContent() {
-        return objectiveContent;
-    }
-
-    public void setObjectiveContent(String objectiveContent) {
-        this.objectiveContent = objectiveContent;
-    }
-
-
-    @Override
-    public String toString() {
-        return "CriminalDetail{" +
-                "id=" + id +
-                ", subjectiveContent='" + subjectiveContent + '\'' +
-                ", objectiveContent='" + objectiveContent + '\'' +
-                '}';
-    }
 }

@@ -32,8 +32,6 @@ public class CriminalCaseRepositoryTest {
     @Autowired
     private CriminalCaseRepository criminalCaseRepository;
 
-    @Autowired
-    private CriminalDetailsRepository criminalDetailsRepository;
 
     @Test
     public void should_return_singleEntity_when_call_findCriminalCaseById_given_id(){
@@ -126,11 +124,9 @@ public class CriminalCaseRepositoryTest {
         saveCri.setId(a.getId());
 
         CriminalCase result = criminalCaseRepository.save(saveCri);
-//
-//        System.out.println("===="+result.getCriminalDetail().toString());
 
 
-        Assertions.assertNull(result.getCriminalDetail().getObjectiveContent());
+        Assertions.assertEquals("Messi2",result.getCriminalDetail().getObjectiveContent());
 
 
     }

@@ -1,5 +1,7 @@
 package com.oocl.web.sampleWebApp.jpaSample.entity;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.*;
@@ -16,6 +18,8 @@ import java.util.List;
  */
 
 @Entity
+@Data
+@NoArgsConstructor
 public class Procuratorat {
 
     @Id
@@ -29,35 +33,5 @@ public class Procuratorat {
 
     @OneToMany(cascade = CascadeType.ALL)
     List<Inquisitor> list;
-
-
-    public Procuratorat() {
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public List<Inquisitor> getList() {
-        return list;
-    }
-
-    public void setList(List<Inquisitor> list) {
-        this.list = list;
-    }
-
 
 }
