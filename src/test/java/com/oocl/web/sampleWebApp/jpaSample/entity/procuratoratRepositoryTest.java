@@ -1,7 +1,5 @@
 package com.oocl.web.sampleWebApp.jpaSample.entity;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 /**
  * Created with IDEA
  *

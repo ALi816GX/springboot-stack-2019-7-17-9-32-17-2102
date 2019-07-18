@@ -18,7 +18,7 @@ plugins {
 }
 
 flyway {
-	url = 'jdbc:h2:file:./h2/court'
+	url = 'jdbc:h2:file:./h2/parking_lot'
 	user = 'sa'
 }
 
@@ -38,6 +38,8 @@ repositories {
 
 
 dependencies {
+
+
 	implementation('org.springframework.boot:spring-boot-starter-data-jpa')
 	implementation('org.springframework.boot:spring-boot-starter-web')
 	runtimeOnly('org.springframework.boot:spring-boot-devtools')
@@ -52,5 +54,7 @@ dependencies {
 	testRuntimeOnly "org.junit.vintage:junit-vintage-engine:4.12.0"
 	testCompile('org.junit.jupiter:junit-jupiter-params:5.0.0')
 	testRuntime('org.junit.jupiter:junit-jupiter-engine:5.0.0')
+
+
 }
 

@@ -1,8 +1,5 @@
 package com.oocl.web.sampleWebApp.jpaSample.repository;
 
-import com.oocl.web.sampleWebApp.jpaSample.entity.CriminalCase;
-import com.oocl.web.sampleWebApp.jpaSample.entity.CriminalDetail;
-import com.oocl.web.sampleWebApp.jpaSample.entity.Procuratorat;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
