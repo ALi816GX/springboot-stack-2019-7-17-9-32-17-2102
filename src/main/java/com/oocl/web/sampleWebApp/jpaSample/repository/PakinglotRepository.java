@@ -12,7 +12,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * @Time:23:14
  * @description:
  */
-public interface PakinglotRepository extends JpaRepository<Parkinglot,Integer> {
+public interface PakinglotRepository extends JpaRepository<Parkinglot,Long> {
 
+
+    Parkinglot findParkinglotById(Long id);
 
 }

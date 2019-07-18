@@ -41,4 +41,22 @@ public class PakinglotRepositoryTest {
     }
 
 
+
+    @Test
+    public void should_return_none_when_call_deleteParkinglotById_given_id(){
+
+        Parkinglot parkinglot = new Parkinglot("leo",10,1);
+
+        Parkinglot result = pakinglotRepository.save(parkinglot);
+
+        pakinglotRepository.deleteById(result.getId());
+
+        Assertions.assertNull(pakinglotRepository.findParkinglotById(result.getId()));
+
+    }
+
+
+
+
+
 }

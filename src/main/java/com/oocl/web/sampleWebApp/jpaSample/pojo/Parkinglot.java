@@ -6,6 +6,7 @@ import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.UniqueElements;
 
 import javax.persistence.*;
+import javax.validation.constraints.Min;
 
 /**
  * Created with IDEA
@@ -29,7 +30,7 @@ public class Parkinglot {
     @Column(name="name", unique=true)
     private String name;
 
-    @Length
+    @Min(0)
     private int capacity;
 
 
