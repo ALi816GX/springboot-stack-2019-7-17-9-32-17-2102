@@ -1,7 +1,6 @@
 package com.oocl.web.sampleWebApp.jpaSample.repository;
 
 import com.oocl.web.sampleWebApp.jpaSample.pojo.Order;
-import com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
@@ -12,7 +11,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.Date;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Created with IDEA

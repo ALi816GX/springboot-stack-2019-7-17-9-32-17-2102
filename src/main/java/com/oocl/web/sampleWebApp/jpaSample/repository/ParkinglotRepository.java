@@ -17,7 +17,7 @@ import java.util.List;
  * @Time:23:14
  * @description:
  */
-public interface PakinglotRepository extends JpaRepository<Parkinglot,Long> {
+public interface ParkinglotRepository extends JpaRepository<Parkinglot,Long> {
 
 
     Parkinglot findParkinglotById(Long id);

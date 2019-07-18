@@ -13,8 +13,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.List;
-
 /**
  * Created with IDEA
  *
@@ -27,18 +25,18 @@ import java.util.List;
 @RunWith(SpringRunner.class)
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
-public class PakinglotRepositoryTest {
+public class ParkinglotRepositoryTest {
 
 
     @Autowired
-    private PakinglotRepository pakinglotRepository;
+    private ParkinglotRepository parkinglotRepository;
 
     @Test
     public void should_return_parkinglot_when_call_addParkinglot_given_pakinglot(){
 
         Parkinglot parkinglot = new Parkinglot("leo",10,1);
 
-        Parkinglot result = pakinglotRepository.save(parkinglot);
+        Parkinglot result = parkinglotRepository.save(parkinglot);
 
         Assertions.assertEquals("leo", result.getName());
 
@@ -51,11 +49,11 @@ public class PakinglotRepositoryTest {
 
         Parkinglot parkinglot = new Parkinglot("leo",10,1);
 
-        Parkinglot result = pakinglotRepository.save(parkinglot);
+        Parkinglot result = parkinglotRepository.save(parkinglot);
 
-        pakinglotRepository.deleteById(result.getId());
+        parkinglotRepository.deleteById(result.getId());
 
-        Assertions.assertNull(pakinglotRepository.findParkinglotById(result.getId()));
+        Assertions.assertNull(parkinglotRepository.findParkinglotById(result.getId()));
 
     }
 
@@ -65,7 +63,7 @@ public class PakinglotRepositoryTest {
 
 
         for (int i = 0; i < 20; i++) {
-            pakinglotRepository.save(new Parkinglot("leo"+(20-i),30-i,i));
+            parkinglotRepository.save(new Parkinglot("leo"+(20-i),30-i,i));
         }
 
 
@@ -73,7 +71,7 @@ public class PakinglotRepositoryTest {
 
         Pageable pageable  = PageRequest.of(0,15,sort);
 
-        Page<Parkinglot> result = pakinglotRepository.findAll(pageable);
+        Page<Parkinglot> result = parkinglotRepository.findAll(pageable);
 
         Assertions.assertEquals(15,result.getContent().size());
 
@@ -85,7 +83,7 @@ public class PakinglotRepositoryTest {
 
         Parkinglot parkinglot = new Parkinglot("leo",10,1);
 
-        Parkinglot result = pakinglotRepository.save(parkinglot);
+        Parkinglot result = parkinglotRepository.save(parkinglot);
 
 
         Assertions.assertEquals("leo",result.getName());
@@ -98,14 +96,14 @@ public class PakinglotRepositoryTest {
 
         Parkinglot parkinglot = new Parkinglot("leo",10,1);
 
-        Parkinglot result = pakinglotRepository.save(parkinglot);
+        Parkinglot result = parkinglotRepository.save(parkinglot);
 
 
         Parkinglot parkinglot2 = new Parkinglot("leo",8,1);
         parkinglot2.setId(result.getId());
 
 
-        Parkinglot result2 = pakinglotRepository.save(parkinglot2);
+        Parkinglot result2 = parkinglotRepository.save(parkinglot2);
 
         Assertions.assertEquals(8,result2.getCapacity());
 
