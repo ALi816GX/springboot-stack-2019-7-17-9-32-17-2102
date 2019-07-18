@@ -45,6 +45,25 @@ public class OrderRepositoryTest {
     }
 
 
+    @Test
+    public void should_return_order_when_call_update_order_given_order(){
+
+        Order order = new Order("111","222","333",new Date(),new Date());
+
+        Order result = orderRepository.save(order);
+
+
+        Order order1 = new Order("1110","2220","3330",new Date(),new Date());
+        order1.setId(result.getId());
+
+
+        Order result2 = orderRepository.save(order1);
+
+        Assertions.assertEquals("1110", result.getOrderNum());
+
+    }
+
+
 
 
 }
