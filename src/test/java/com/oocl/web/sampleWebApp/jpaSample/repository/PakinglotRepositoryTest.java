@@ -81,7 +81,7 @@ public class PakinglotRepositoryTest {
 
 
     @Test
-    public void should_return_parkinglot_when_call_find_pakinglot_by_id_guven_id(){
+    public void should_return_parkinglot_when_call_find_pakinglot_by_id_given_id(){
 
         Parkinglot parkinglot = new Parkinglot("leo",10,1);
 
@@ -90,8 +90,24 @@ public class PakinglotRepositoryTest {
 
         Assertions.assertEquals("leo",result.getName());
 
+    }
 
 
+    @Test
+    public void should_return_parkinglot_when_call_update_paking_lot_given_parking_lot(){
+
+        Parkinglot parkinglot = new Parkinglot("leo",10,1);
+
+        Parkinglot result = pakinglotRepository.save(parkinglot);
+
+
+        Parkinglot parkinglot2 = new Parkinglot("leo",8,1);
+        parkinglot2.setId(result.getId());
+
+
+        Parkinglot result2 = pakinglotRepository.save(parkinglot2);
+
+        Assertions.assertEquals(8,result2.getCapacity());
 
     }
 
