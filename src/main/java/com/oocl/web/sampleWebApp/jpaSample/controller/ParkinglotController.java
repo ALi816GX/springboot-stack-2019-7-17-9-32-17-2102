@@ -66,6 +66,14 @@ public class ParkinglotController {
 
 
 
+    @GetMapping("/{id}")
+    public Parkinglot getParkinglot(@PathVariable int id) {
+
+        log.info("get parkinglot");
+
+        return parkinglotRepository.findParkinglotById((long) id);
+
+    }
 
 
 
