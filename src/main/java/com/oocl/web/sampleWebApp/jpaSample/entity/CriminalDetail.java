@@ -42,4 +42,6 @@ public class CriminalDetail {
         this.objectiveContent = objectiveContent;
     }
 
+
+
 }

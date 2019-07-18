@@ -65,7 +65,7 @@ public class CriminalCaseRepositoryTest {
 
         Sort sort = new Sort(Sort.Direction.ASC, "millTime");
 
-
+        //Sort
         List<CriminalCase> list = criminalCaseRepository.findAll(sort);
         for (CriminalCase x:list) {
             System.out.println("+++"+x.toString());

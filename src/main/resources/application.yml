@@ -5,12 +5,12 @@ logging:
         springframework:
           web: DEBUG
         hibernate: DEBUG
-spring:
-  datasource:
-    url:  jdbc:h2:file:./h2/org
-  jpa:
-    hibernate:
-      ddl-auto: update
+#spring:
+#  datasource:
+#    url:  jdbc:h2:file:./Court
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
   h2:
     console:
       enabled: true
