@@ -79,6 +79,17 @@ public class ParkinglotController {
     }
 
 
+    @PutMapping
+    public Parkinglot updateParkinglots(@RequestBody Parkinglot parkinglot){
+
+        log.info("update parkinglot by id"+parkinglot.toString());
+
+        return parkinglotRepository.save(parkinglot);
+    }
+
+
+
+
 
 
 
