@@ -2,6 +2,7 @@ package com.oocl.web.sampleWebApp.jpaSample.repository;
 
 import com.oocl.web.sampleWebApp.jpaSample.pojo.Order;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,12 +32,16 @@ public class OrderRepositoryTest {
     @Autowired
     private OrderRepository orderRepository;
 
+
+
     @Test
     public void should_return_order_when_call_add_order_given_order(){
 
         Order order = new Order("111","222","333",new Date(),new Date());
 
         Order result = orderRepository.save(order);
+
+        System.out.println("------"+result.toString());
 
         Assertions.assertEquals("222", result.getParkingName());
 

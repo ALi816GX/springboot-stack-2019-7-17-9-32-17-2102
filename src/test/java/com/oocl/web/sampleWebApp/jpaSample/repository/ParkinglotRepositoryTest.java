@@ -71,7 +71,7 @@ public class ParkinglotRepositoryTest {
 
         Pageable pageable  = PageRequest.of(0,15,sort);
 
-s
+        Page<Parkinglot> result = parkinglotRepository.findAll(pageable);
 
         Assertions.assertEquals(15,result.getContent().size());
 

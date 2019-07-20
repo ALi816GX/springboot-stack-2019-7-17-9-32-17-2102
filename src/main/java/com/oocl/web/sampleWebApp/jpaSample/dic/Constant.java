@@ -13,9 +13,8 @@ public class Constant {
 
 
     public static final int STATE_OK = 200;
-    public static final String BBB = "";
-    public static final String CCC = "";
-    public static final String DDD = "";
+    public static final int STATE_ERROE = 500;
+
 
 
 

@@ -21,12 +21,22 @@ import java.util.logging.Logger;
 
 @CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/parkinglots")
+@RequestMapping("/orders")
 public class OrderConroller {
 
     @Autowired
     private OrderRepository orderRepository;
 
+    @PostMapping("/{parkingName}/{carNum}")
+    public Order saveOrder(@PathVariable String parkingName,@PathVariable String carNum) {
+
+        String orderNum = "" + System.currentTimeMillis();
+
+        Order order = new Order(orderNum,parkingName,carNum,new Date(),null);
+
+        return orderRepository.save(order);
+
+    }
 
 
 
