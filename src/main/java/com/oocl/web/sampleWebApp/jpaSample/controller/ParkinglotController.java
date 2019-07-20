@@ -56,6 +56,20 @@ public class ParkinglotController {
 
 
 
+    @GetMapping(params = {"page", "size"})
+    public List<Parkinglot> getParkinglotsByPage(@RequestParam(name = "page",defaultValue = "0") int pageNum,
+                                                 @RequestParam(name = "size",defaultValue = "15") int pageSize) {
+
+        Sort sort = new Sort(Sort.Direction.ASC,"id");
+        Pageable pageable  = PageRequest.of(pageNum,pageSize,sort);
+        Page<Parkinglot> result = parkinglotRepository.findAll(pageable);
+
+        return result.getContent();
+
+    }
+
+
+
 
 
 

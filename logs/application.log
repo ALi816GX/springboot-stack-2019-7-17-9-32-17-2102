@@ -1184,3 +1184,722 @@
 2019-07-20 17:08:48.304 DEBUG 6519 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [200]
 2019-07-20 17:08:48.312 DEBUG 6519 --- [http-nio-8080-exec-4] o.h.e.jdbc.internal.JdbcCoordinatorImpl  : HHH000420: Closing un-released batch
 2019-07-20 17:08:48.312 DEBUG 6519 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-20 17:12:00.749  INFO 6519 --- [Thread-27] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-20 17:12:00.752  INFO 6519 --- [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 17:12:00.753 DEBUG 6519 --- [Thread-27] o.hibernate.internal.SessionFactoryImpl  : HHH000031: Closing
+2019-07-20 17:12:00.755 DEBUG 6519 --- [Thread-27] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@4e55b211] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@2537fa47]
+2019-07-20 17:12:00.760 DEBUG 6519 --- [Thread-27] o.h.s.i.AbstractServiceRegistryImpl      : Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2019-07-20 17:12:00.761 DEBUG 6519 --- [Thread-27] o.h.b.r.i.BootstrapServiceRegistryImpl   : Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2019-07-20 17:12:00.766  INFO 6519 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-20 17:12:00.773  INFO 6519 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-20 17:12:06.684  INFO 6546 --- [restartedMain] c.o.w.s.SampleWebAppApplication          : Starting SampleWebAppApplication on SuperBoy-Leo.local with PID 6546 (started by linguangxiong in /Users/linguangxiong/Documents/OOCL工作内容/线下训练营/java/Parking-Lot-Template-2019-7-18-8-5-49-775)
+2019-07-20 17:12:06.689  INFO 6546 --- [restartedMain] c.o.w.s.SampleWebAppApplication          : No active profile set, falling back to default profiles: default
+2019-07-20 17:12:06.764  INFO 6546 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-07-20 17:12:06.765  INFO 6546 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-07-20 17:12:07.630  INFO 6546 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-20 17:12:07.699  INFO 6546 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62ms. Found 2 repository interfaces.
+2019-07-20 17:12:08.023  INFO 6546 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b4c57e73] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-20 17:12:08.397  INFO 6546 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-20 17:12:08.413  INFO 6546 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-20 17:12:08.413  INFO 6546 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-07-20 17:12:08.419  INFO 6546 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/linguangxiong/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-07-20 17:12:08.496  INFO 6546 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-20 17:12:08.496 DEBUG 6546 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-07-20 17:12:08.496  INFO 6546 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1724 ms
+2019-07-20 17:12:08.537  INFO 6546 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-07-20 17:12:08.538  INFO 6546 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2-console/*]
+2019-07-20 17:12:08.542  INFO 6546 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-20 17:12:08.542  INFO 6546 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-20 17:12:08.543  INFO 6546 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2019-07-20 17:12:08.543  INFO 6546 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-20 17:12:08.664  INFO 6546 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-20 17:12:08.913  INFO 6546 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-20 17:12:08.955 DEBUG 6546 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : PersistenceUnitInfo [
+	name: default
+	persistence provider classname: null
+	classloader: org.springframework.boot.devtools.restart.classloader.RestartClassLoader@49f78704
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: HikariDataSource (HikariPool-1)
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/Users/linguangxiong/Documents/OOCL%e5%b7%a5%e4%bd%9c%e5%86%85%e5%ae%b9/%e7%ba%bf%e4%b8%8b%e8%ae%ad%e7%bb%83%e8%90%a5/java/Parking-Lot-Template-2019-7-18-8-5-49-775/out/production/classes/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names [
+		com.oocl.web.sampleWebApp.jpaSample.pojo.Order
+		com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot]
+	Mapping files names []
+	Properties []
+2019-07-20 17:12:08.963 DEBUG 6546 --- [restartedMain] o.h.i.internal.IntegratorServiceImpl     : Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2019-07-20 17:12:08.964 DEBUG 6546 --- [restartedMain] o.h.i.internal.IntegratorServiceImpl     : Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2019-07-20 17:12:08.965 DEBUG 6546 --- [restartedMain] o.h.i.internal.IntegratorServiceImpl     : Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2019-07-20 17:12:09.009  INFO 6546 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-07-20 17:12:09.012  INFO 6546 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-07-20 17:12:09.096 DEBUG 6546 --- [restartedMain] o.hibernate.service.spi.ServiceBinding   : Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2019-07-20 17:12:09.110 DEBUG 6546 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2019-07-20 17:12:09.110 DEBUG 6546 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2019-07-20 17:12:09.120  INFO 6546 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-20 17:12:09.147 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@9cb60a3
+2019-07-20 17:12:09.147 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@9cb60a3
+2019-07-20 17:12:09.148 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@9cb60a3
+2019-07-20 17:12:09.148 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@4f3fbaa0
+2019-07-20 17:12:09.149 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.TrueFalseType@5c6d3f3c
+2019-07-20 17:12:09.149 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.YesNoType@419f1bee
+2019-07-20 17:12:09.151 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@2ac8fc9a
+2019-07-20 17:12:09.151 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@2ac8fc9a
+2019-07-20 17:12:09.151 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@2ac8fc9a
+2019-07-20 17:12:09.152 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.CharacterType@41bf877d
+2019-07-20 17:12:09.152 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.CharacterType@41bf877d
+2019-07-20 17:12:09.152 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@41bf877d
+2019-07-20 17:12:09.153 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@3b10906a
+2019-07-20 17:12:09.153 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@3b10906a
+2019-07-20 17:12:09.154 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@3b10906a
+2019-07-20 17:12:09.155 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.IntegerType@13f30157
+2019-07-20 17:12:09.155 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.IntegerType@13f30157
+2019-07-20 17:12:09.155 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@13f30157
+2019-07-20 17:12:09.156 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@a8b24d5
+2019-07-20 17:12:09.156 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@a8b24d5
+2019-07-20 17:12:09.156 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.LongType@a8b24d5
+2019-07-20 17:12:09.157 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@8541148
+2019-07-20 17:12:09.157 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@8541148
+2019-07-20 17:12:09.157 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@8541148
+2019-07-20 17:12:09.158 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@1d11fc44
+2019-07-20 17:12:09.159 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@1d11fc44
+2019-07-20 17:12:09.159 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@1d11fc44
+2019-07-20 17:12:09.160 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@663acea6
+2019-07-20 17:12:09.161 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@663acea6
+2019-07-20 17:12:09.164 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@3e6ee13d
+2019-07-20 17:12:09.165 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@3e6ee13d
+2019-07-20 17:12:09.166 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.StringType@41d00a9a
+2019-07-20 17:12:09.167 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.StringType@41d00a9a
+2019-07-20 17:12:09.168 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@294d3d07
+2019-07-20 17:12:09.169 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@137009fb
+2019-07-20 17:12:09.170 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.UrlType@a170301
+2019-07-20 17:12:09.170 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.UrlType@a170301
+2019-07-20 17:12:09.171 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.DurationType@76a0cd3f
+2019-07-20 17:12:09.171 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@76a0cd3f
+2019-07-20 17:12:09.172 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Instant -> org.hibernate.type.InstantType@1839f824
+2019-07-20 17:12:09.172 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@1839f824
+2019-07-20 17:12:09.173 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@6b7d867c
+2019-07-20 17:12:09.174 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@6b7d867c
+2019-07-20 17:12:09.175 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@46dfa11f
+2019-07-20 17:12:09.175 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@46dfa11f
+2019-07-20 17:12:09.176 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@3e3fce5b
+2019-07-20 17:12:09.176 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@3e3fce5b
+2019-07-20 17:12:09.177 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@6da03828
+2019-07-20 17:12:09.177 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@6da03828
+2019-07-20 17:12:09.178 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@9fc528a
+2019-07-20 17:12:09.178 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@9fc528a
+2019-07-20 17:12:09.180 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@322329f
+2019-07-20 17:12:09.180 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@322329f
+2019-07-20 17:12:09.182 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.DateType@bec8af6
+2019-07-20 17:12:09.182 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.DateType@bec8af6
+2019-07-20 17:12:09.185 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.TimeType@53815a53
+2019-07-20 17:12:09.185 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@53815a53
+2019-07-20 17:12:09.188 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.TimestampType@31f9312e
+2019-07-20 17:12:09.188 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@31f9312e
+2019-07-20 17:12:09.189 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@31f9312e
+2019-07-20 17:12:09.192 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@6d4b4896
+2019-07-20 17:12:09.194 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.CalendarType@4011870e
+2019-07-20 17:12:09.194 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@4011870e
+2019-07-20 17:12:09.194 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@4011870e
+2019-07-20 17:12:09.195 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@1374f01d
+2019-07-20 17:12:09.196 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.LocaleType@466ffc65
+2019-07-20 17:12:09.197 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@466ffc65
+2019-07-20 17:12:09.198 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.CurrencyType@7888ae16
+2019-07-20 17:12:09.198 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@7888ae16
+2019-07-20 17:12:09.199 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.TimeZoneType@78fd18c4
+2019-07-20 17:12:09.199 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@78fd18c4
+2019-07-20 17:12:09.200 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.ClassType@12c58dda
+2019-07-20 17:12:09.200 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@12c58dda
+2019-07-20 17:12:09.201 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@b67ae29
+2019-07-20 17:12:09.202 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@b67ae29
+2019-07-20 17:12:09.204 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@50f3da37
+2019-07-20 17:12:09.207 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BinaryType@2eff9045
+2019-07-20 17:12:09.207 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BinaryType@2eff9045
+2019-07-20 17:12:09.207 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BinaryType@2eff9045
+2019-07-20 17:12:09.210 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@2feb99a8
+2019-07-20 17:12:09.211 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@2feb99a8
+2019-07-20 17:12:09.211 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@2feb99a8
+2019-07-20 17:12:09.214 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.RowVersionType@65e5fffb
+2019-07-20 17:12:09.215 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.ImageType@68584c48
+2019-07-20 17:12:09.216 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.CharArrayType@527984ee
+2019-07-20 17:12:09.217 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.CharArrayType@527984ee
+2019-07-20 17:12:09.217 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.CharArrayType@527984ee
+2019-07-20 17:12:09.218 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@3cafd68c
+2019-07-20 17:12:09.219 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@3cafd68c
+2019-07-20 17:12:09.219 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@3cafd68c
+2019-07-20 17:12:09.219 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.TextType@3ae9b03b
+2019-07-20 17:12:09.219 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.NTextType@370b0d3a
+2019-07-20 17:12:09.220 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BlobType@3dbcbee
+2019-07-20 17:12:09.221 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@3dbcbee
+2019-07-20 17:12:09.221 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@6a05ae7d
+2019-07-20 17:12:09.225 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.ClobType@6198d9c7
+2019-07-20 17:12:09.226 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@6198d9c7
+2019-07-20 17:12:09.229 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.NClobType@197e19dd
+2019-07-20 17:12:09.229 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@197e19dd
+2019-07-20 17:12:09.230 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@4e354cd5
+2019-07-20 17:12:09.230 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@1a4cad60
+2019-07-20 17:12:09.232 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.SerializableType@1a4de019
+2019-07-20 17:12:09.234 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.ObjectType@1030890a
+2019-07-20 17:12:09.235 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@1030890a
+2019-07-20 17:12:09.236 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@3e582115
+2019-07-20 17:12:09.237 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@2a34870d
+2019-07-20 17:12:09.237 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@741175fd
+2019-07-20 17:12:09.237 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@11107177
+2019-07-20 17:12:09.237 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@6ebfbac9
+2019-07-20 17:12:09.237 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@603d54fc
+2019-07-20 17:12:09.237 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@1f7c6b9b
+2019-07-20 17:12:09.237 DEBUG 6546 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@df53aca
+2019-07-20 17:12:09.248 DEBUG 6546 --- [restartedMain] o.h.boot.internal.BootstrapContextImpl   : Injecting JPA temp ClassLoader [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@5a84b9ae] into BootstrapContext; was [null]
+2019-07-20 17:12:09.248 DEBUG 6546 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : ClassLoaderAccessImpl#injectTempClassLoader(org.springframework.instrument.classloading.SimpleThrowawayClassLoader@5a84b9ae) [was null]
+2019-07-20 17:12:09.248 DEBUG 6546 --- [restartedMain] o.h.boot.internal.BootstrapContextImpl   : Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@5d0823d2] into BootstrapContext; was [null]
+2019-07-20 17:12:09.249 DEBUG 6546 --- [restartedMain] o.h.boot.internal.BootstrapContextImpl   : Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@661ddd8d] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@c6f4af0]
+2019-07-20 17:12:09.279 DEBUG 6546 --- [restartedMain] o.h.boot.internal.BootstrapContextImpl   : Injecting JPA temp ClassLoader [null] into BootstrapContext; was [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@5a84b9ae]
+2019-07-20 17:12:09.280 DEBUG 6546 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : ClassLoaderAccessImpl#injectTempClassLoader(null) [was org.springframework.instrument.classloading.SimpleThrowawayClassLoader@5a84b9ae]
+2019-07-20 17:12:09.285 DEBUG 6546 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2019-07-20 17:12:09.286 DEBUG 6546 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2019-07-20 17:12:09.286 DEBUG 6546 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2019-07-20 17:12:09.286 DEBUG 6546 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2019-07-20 17:12:09.287 DEBUG 6546 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2019-07-20 17:12:09.287 DEBUG 6546 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2019-07-20 17:12:09.288 DEBUG 6546 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2019-07-20 17:12:09.289 DEBUG 6546 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2019-07-20 17:12:09.289 DEBUG 6546 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2019-07-20 17:12:09.290 DEBUG 6546 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2019-07-20 17:12:09.290 DEBUG 6546 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2019-07-20 17:12:09.291 DEBUG 6546 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2019-07-20 17:12:09.291 DEBUG 6546 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2019-07-20 17:12:09.291 DEBUG 6546 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2019-07-20 17:12:09.297 DEBUG 6546 --- [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : Database ->
+       name : H2
+    version : 1.4.197 (2018-03-18)
+      major : 1
+      minor : 4
+2019-07-20 17:12:09.297 DEBUG 6546 --- [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : Driver ->
+       name : H2 JDBC Driver
+    version : 1.4.197 (2018-03-18)
+      major : 1
+      minor : 4
+2019-07-20 17:12:09.297 DEBUG 6546 --- [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : JDBC version : 4.0
+2019-07-20 17:12:09.306  INFO 6546 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-07-20 17:12:09.367 DEBUG 6546 --- [restartedMain] o.h.boot.model.relational.Namespace      : Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2019-07-20 17:12:09.376 DEBUG 6546 --- [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@73af6c29] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@429c52d2]
+2019-07-20 17:12:09.402 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.AnnotationBinder       : Binding entity from annotated class: com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot
+2019-07-20 17:12:09.430 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2019-07-20 17:12:09.441 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.EntityBinder         : Import with entity name Parkinglot
+2019-07-20 17:12:09.448 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.EntityBinder         : Bind entity com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot on table parkinglot
+2019-07-20 17:12:09.475 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(parkinglot), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2019-07-20 17:12:09.480 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property id with lazy=false
+2019-07-20 17:12:09.481 DEBUG 6546 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot:id]
+2019-07-20 17:12:09.483 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for id
+2019-07-20 17:12:09.487 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property id
+2019-07-20 17:12:09.493 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.BinderHelper           : #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, , ...)
+2019-07-20 17:12:09.493 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(parkinglot), mappingColumn=capacity, insertable=true, updatable=true, unique=false}
+2019-07-20 17:12:09.493 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property capacity with lazy=false
+2019-07-20 17:12:09.493 DEBUG 6546 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot:capacity]
+2019-07-20 17:12:09.493 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for capacity
+2019-07-20 17:12:09.494 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property capacity
+2019-07-20 17:12:09.496 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(parkinglot), mappingColumn=index, insertable=true, updatable=true, unique=false}
+2019-07-20 17:12:09.496 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property index with lazy=false
+2019-07-20 17:12:09.496 DEBUG 6546 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot:index]
+2019-07-20 17:12:09.496 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for index
+2019-07-20 17:12:09.496 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property index
+2019-07-20 17:12:09.496 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(parkinglot), mappingColumn=name, insertable=true, updatable=true, unique=true}
+2019-07-20 17:12:09.496 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property name with lazy=false
+2019-07-20 17:12:09.497 DEBUG 6546 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot:name]
+2019-07-20 17:12:09.497 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for name
+2019-07-20 17:12:09.497 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property name
+2019-07-20 17:12:09.498 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.AnnotationBinder       : Binding entity from annotated class: com.oocl.web.sampleWebApp.jpaSample.pojo.Order
+2019-07-20 17:12:09.498 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2019-07-20 17:12:09.498 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.EntityBinder         : Import with entity name Order
+2019-07-20 17:12:09.498 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.EntityBinder         : Bind entity com.oocl.web.sampleWebApp.jpaSample.pojo.Order on table order
+2019-07-20 17:12:09.504 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(order), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2019-07-20 17:12:09.505 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property id with lazy=false
+2019-07-20 17:12:09.505 DEBUG 6546 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.oocl.web.sampleWebApp.jpaSample.pojo.Order:id]
+2019-07-20 17:12:09.505 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for id
+2019-07-20 17:12:09.505 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property id
+2019-07-20 17:12:09.505 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.BinderHelper           : #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, , ...)
+2019-07-20 17:12:09.505 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(order), mappingColumn=car_num, insertable=true, updatable=true, unique=false}
+2019-07-20 17:12:09.506 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property carNum with lazy=false
+2019-07-20 17:12:09.506 DEBUG 6546 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.oocl.web.sampleWebApp.jpaSample.pojo.Order:carNum]
+2019-07-20 17:12:09.506 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for carNum
+2019-07-20 17:12:09.506 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property carNum
+2019-07-20 17:12:09.506 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(order), mappingColumn=create_date, insertable=true, updatable=true, unique=false}
+2019-07-20 17:12:09.506 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property createDate with lazy=false
+2019-07-20 17:12:09.506 DEBUG 6546 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.oocl.web.sampleWebApp.jpaSample.pojo.Order:createDate]
+2019-07-20 17:12:09.506 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for createDate
+2019-07-20 17:12:09.507 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property createDate
+2019-07-20 17:12:09.509 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(order), mappingColumn=end_date, insertable=true, updatable=true, unique=false}
+2019-07-20 17:12:09.510 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property endDate with lazy=false
+2019-07-20 17:12:09.510 DEBUG 6546 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.oocl.web.sampleWebApp.jpaSample.pojo.Order:endDate]
+2019-07-20 17:12:09.510 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for endDate
+2019-07-20 17:12:09.510 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property endDate
+2019-07-20 17:12:09.511 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(order), mappingColumn=order_num, insertable=true, updatable=true, unique=false}
+2019-07-20 17:12:09.511 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property orderNum with lazy=false
+2019-07-20 17:12:09.511 DEBUG 6546 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.oocl.web.sampleWebApp.jpaSample.pojo.Order:orderNum]
+2019-07-20 17:12:09.512 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for orderNum
+2019-07-20 17:12:09.512 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property orderNum
+2019-07-20 17:12:09.512 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(order), mappingColumn=parking_name, insertable=true, updatable=true, unique=false}
+2019-07-20 17:12:09.512 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property parkingName with lazy=false
+2019-07-20 17:12:09.513 DEBUG 6546 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.oocl.web.sampleWebApp.jpaSample.pojo.Order:parkingName]
+2019-07-20 17:12:09.513 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for parkingName
+2019-07-20 17:12:09.513 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property parkingName
+2019-07-20 17:12:09.513 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(order), mappingColumn=state, insertable=true, updatable=true, unique=false}
+2019-07-20 17:12:09.513 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property state with lazy=false
+2019-07-20 17:12:09.513 DEBUG 6546 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.oocl.web.sampleWebApp.jpaSample.pojo.Order:state]
+2019-07-20 17:12:09.513 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for state
+2019-07-20 17:12:09.514 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property state
+2019-07-20 17:12:09.515 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for id
+2019-07-20 17:12:09.515 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for capacity
+2019-07-20 17:12:09.515 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for index
+2019-07-20 17:12:09.515 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for name
+2019-07-20 17:12:09.515 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for id
+2019-07-20 17:12:09.515 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for carNum
+2019-07-20 17:12:09.515 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for createDate
+2019-07-20 17:12:09.515 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for endDate
+2019-07-20 17:12:09.515 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for orderNum
+2019-07-20 17:12:09.515 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for parkingName
+2019-07-20 17:12:09.516 DEBUG 6546 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for state
+2019-07-20 17:12:09.517 DEBUG 6546 --- [restartedMain] org.hibernate.mapping.PrimaryKey         : Forcing column [id] to be non-null as it is part of the primary key for table [parkinglot]
+2019-07-20 17:12:09.517 DEBUG 6546 --- [restartedMain] org.hibernate.mapping.PrimaryKey         : Forcing column [id] to be non-null as it is part of the primary key for table [order]
+2019-07-20 17:12:09.541 DEBUG 6546 --- [restartedMain] o.hibernate.internal.SessionFactoryImpl  : Building session factory
+2019-07-20 17:12:09.542 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : SessionFactory name : null
+2019-07-20 17:12:09.542 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : Automatic flush during beforeCompletion(): enabled
+2019-07-20 17:12:09.542 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : Automatic session close at end of transaction: disabled
+2019-07-20 17:12:09.542 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : Statistics: disabled
+2019-07-20 17:12:09.542 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : Deleted entity synthetic identifier rollback: disabled
+2019-07-20 17:12:09.542 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : Default entity-mode: pojo
+2019-07-20 17:12:09.542 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2019-07-20 17:12:09.542 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : Allow initialization of lazy state outside session : disabled
+2019-07-20 17:12:09.542 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : Using BatchFetchStyle : LEGACY
+2019-07-20 17:12:09.542 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : Default batch fetch size: -1
+2019-07-20 17:12:09.542 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : Maximum outer join fetch depth: null
+2019-07-20 17:12:09.543 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : Default null ordering: NONE
+2019-07-20 17:12:09.543 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : Order SQL updates by primary key: disabled
+2019-07-20 17:12:09.543 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : Order SQL inserts for batching: disabled
+2019-07-20 17:12:09.543 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : multi-tenancy strategy : NONE
+2019-07-20 17:12:09.543 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : JTA Track by Thread: enabled
+2019-07-20 17:12:09.543 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : Query language substitutions: {}
+2019-07-20 17:12:09.543 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : Named query checking : enabled
+2019-07-20 17:12:09.543 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : Second-level cache: disabled
+2019-07-20 17:12:09.543 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : Second-level query cache: disabled
+2019-07-20 17:12:09.543 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : Second-level query cache factory: null
+2019-07-20 17:12:09.543 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : Second-level cache region prefix: null
+2019-07-20 17:12:09.543 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : Optimize second-level cache for minimal puts: disabled
+2019-07-20 17:12:09.543 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : Structured second-level cache entries: disabled
+2019-07-20 17:12:09.544 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : Second-level cache direct-reference entries: disabled
+2019-07-20 17:12:09.544 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : Automatic eviction of collection cache: disabled
+2019-07-20 17:12:09.544 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : JDBC batch size: 15
+2019-07-20 17:12:09.544 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : JDBC batch updates for versioned data: enabled
+2019-07-20 17:12:09.544 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : Scrollable result sets: enabled
+2019-07-20 17:12:09.544 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : Wrap result sets: disabled
+2019-07-20 17:12:09.544 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : JDBC3 getGeneratedKeys(): enabled
+2019-07-20 17:12:09.544 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : JDBC result set fetch size: null
+2019-07-20 17:12:09.544 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : Connection release mode: ON_CLOSE
+2019-07-20 17:12:09.544 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : Generate SQL with comments: disabled
+2019-07-20 17:12:09.544 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : JPA compliance - query : 
+2019-07-20 17:12:09.544 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : JPA compliance - closed-handling : 
+2019-07-20 17:12:09.544 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : JPA compliance - lists : 
+2019-07-20 17:12:09.544 DEBUG 6546 --- [restartedMain] org.hibernate.cfg.Settings               : JPA compliance - transactions : 
+2019-07-20 17:12:09.585 DEBUG 6546 --- [restartedMain] o.hibernate.internal.SessionFactoryImpl  : Session factory constructed with filter configurations : {}
+2019-07-20 17:12:09.586 DEBUG 6546 --- [restartedMain] o.hibernate.internal.SessionFactoryImpl  : Instantiating session factory with properties: {gopherProxySet=false, awt.toolkit=sun.lwawt.macosx.LWCToolkit, hibernate.id.new_generator_mappings=true, file.encoding.pkg=sun.io, java.specification.version=1.8, sun.cpu.isalist=, hibernate.resource.beans.container=org.springframework.orm.hibernate5.SpringBeanContainer@5ca96545, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, sun.jnu.encoding=UTF-8, hibernate.dialect=org.hibernate.dialect.H2Dialect, hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy, com.sun.management.jmxremote.authenticate=false, java.class.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/deploy.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/ext/jaccess.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/javaws.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/jfxswt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/plugin.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/lib/ant-javafx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/lib/javafx-mx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/lib/jconsole.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/lib/packager.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/lib/sa-jdi.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/lib/tools.jar:/Users/linguangxiong/Documents/OOCL工作内容/线下训练营/java/Parking-Lot-Template-2019-7-18-8-5-49-775/out/production/classes:/Users/linguangxiong/Documents/OOCL工作内容/线下训练营/java/Parking-Lot-Template-2019-7-18-8-5-49-775/out/production/resources:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.6/616105b0831250a2e443447508e6a8b26bc466fb/lombok-1.18.6.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-jpa/2.1.0.RELEASE/5432ab9f95a195b7d319c141a156583ab15dfc11/spring-boot-starter-data-jpa-2.1.0.RELEASE.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/2.1.0.RELEASE/5bb07547b965e84edd8abb49c1431d17926e2c6b/spring-boot-starter-web-2.1.0.RELEASE.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-aop/2.1.0.RELEASE/8155b495969a9e30948fc07ae3782400798d94fb/spring-boot-starter-aop-2.1.0.RELEASE.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/2.1.0.RELEASE/d742e26a5432fcef0ef6d04b1e201f5a00390686/spring-boot-starter-jdbc-2.1.0.RELEASE.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-devtools/2.1.0.RELEASE/92d074c8f1f0775cc402cc291237f45b95c3e7e7/spring-boot-devtools-2.1.0.RELEASE.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/javax.transaction/javax.transaction-api/1.3/e006adf5cf3cca2181d16bd640ecb80148ec0fce/javax.transaction-api-1.3.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/javax.xml.bind/jaxb-api/2.3.1/8531ad5ac454cc2deb9d4d32c40c4d7451939b5d/jaxb-api-2.3.1.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/com.h2database/h2/1.4.197/bb391050048ca8ae3e32451b5a3714ecd3596a46/h2-1.4.197.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.3.7.Final/f87c5c1bbfc638309824140e68dfaaeb1bb479f3/hibernate-core-5.3.7.Final.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/2.1.2.RELEASE/58b913f6fbcd3cc254ba1d2bfa9ddf3ea1c817a2/spring-data-jpa-2.1.2.RELEASE.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aspects/5.1.2.RELEASE/a4d588cc6a534483ec139e816de96948366ff9d8/spring-aspects-5.1.2.RELEASE.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.1.0.RELEASE/704c38f5c3ad5205701391110dd4c6f5623fb2cc/spring-boot-starter-json-2.1.0.RELEASE.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/2.1.0.RELEASE/54eab30f1be3dd2f1e833e26143f6243246d878d/spring-boot-starter-2.1.0.RELEASE.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/2.1.0.RELEASE/e3d4a04f0e678f65d5bb283fbef67bfbd05b5ca1/spring-boot-starter-tomcat-2.1.0.RELEASE.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.hibernate.validator/hibernate-validator/6.0.13.Final/af4232bf90ecd33c71147d67185dbb1cfe8f33df/hibernate-validator-6.0.13.Final.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.1.2.RELEASE/46e1db300d855ddef6b71816bb52856f46d6003f/spring-webmvc-5.1.2.RELEASE.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.1.2.RELEASE/3ff2a93b072da42c3930225e3dceeabb0678eb0b/spring-web-5.1.2.RELEASE.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.1.0.RELEASE/8898af6accfab65ac6e232c1535abbc33cfa5fcb/spring-boot-autoconfigure-2.1.0.RELEASE.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.1.0.RELEASE/a78c97c771856f7690b9308886c75affe9295b12/spring-boot-2.1.0.RELEASE.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.1.2.RELEASE/5c85bc522a5adac9b09b7204fa20708519ab6a11/spring-context-5.1.2.RELEASE.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.1.2.RELEASE/bc3cdf3c81bc0a3482cc7f6b9e00ab76847056a7/spring-aop-5.1.2.RELEASE.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.9.2/d2502817521477faf0712c49a6ee2a5388787fc7/aspectjweaver-1.9.2.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/com.zaxxer/HikariCP/3.2.0/6c66db1c636ee90beb4c65fe34abd8ba9396bca6/HikariCP-3.2.0.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/5.1.2.RELEASE/e12fea090e5eb3d6e1c64a769a223e5610107c6/spring-orm-5.1.2.RELEASE.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jdbc/5.1.2.RELEASE/f7c3c6149bc381418dfeedde9a9220f766e231a0/spring-jdbc-5.1.2.RELEASE.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/javax.activation/javax.activation-api/1.2.0/85262acf3ca9816f9537ca47d5adeabaead7cb16/javax.activation-api-1.2.0.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.hibernate.common/hibernate-commons-annotations/5.0.4.Final/965a18fdf939ee75e41f7918532d37b3a8350535/hibernate-commons-annotations-5.0.4.Final.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.3.2.Final/3789d00e859632e6c6206adc0c71625559e6e3b0/jboss-logging-3.3.2.Final.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/javax.persistence/javax.persistence-api/2.2/25665ac8c0b62f50e6488173233239120fc52c96/javax.persistence-api-2.2.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.23.1-GA/c072c13dcb7f705471c40bafb1536171df850ab2/javassist-3.23.1-GA.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.9.3/f32e510b239620852fc9a2387fac41fd053d6a4d/byte-buddy-1.9.3.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/antlr/antlr/2.7.7/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.jboss/jandex/2.0.5.Final/7060f67764565b9ee9d467e3ed0cb8a9c601b23a/jandex-2.0.5.Final.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.4.0/291658ac2ce2476256c7115943652c0accb5c857/classmate-1.4.0.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.dom4j/dom4j/2.1.1/3dce5dbb3571aa820c677fadd8349bfa8f00c199/dom4j-2.1.1.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.1.2.RELEASE/ca9489fe0e3a7a590160ccfc6dc35ee19137a895/spring-data-commons-2.1.2.RELEASE.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/5.1.2.RELEASE/68fcf8efc7b0134126adf9aa4c5053d10d231b57/spring-tx-5.1.2.RELEASE.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.1.2.RELEASE/5d513701a79c92f0549574f5170a05c4af7c893d/spring-beans-5.1.2.RELEASE.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.1.2.RELEASE/3c16b062785e4c101db6b754fcb34a77c1e912c/spring-expression-5.1.2.RELEASE.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.1.2.RELEASE/b9b00d4075c92761cfd4e527e0bdce1931b4f3dc/spring-core-5.1.2.RELEASE.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/2.1.0.RELEASE/d1bd872e05961f30bc122ad14f3e9ae12388e873/spring-boot-starter-logging-2.1.0.RELEASE.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.3/7c4f3c474fb2c041d8028740440937705ebb473a/logback-classic-1.2.3.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-to-slf4j/2.11.1/1097acadf76aa4dd721ec5807566003ae9d975de/log4j-to-slf4j-2.11.1.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.25/af5364cd6679bfffb114f0dec8a157aaa283b76/jul-to-slf4j-1.7.25.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/da76ca59f6a57ee3102f8f9bd9cee742973efa8a/slf4j-api-1.7.25.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.3.2/934c04d3cfef185a8008e7bf34331b79730a9d43/javax.annotation-api-1.3.2.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.23/ec62d74fe50689c28c0ff5b35d3aebcaa8b5be68/snakeyaml-1.23.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.9.7/98d8f190db07f97c64c0ea3af5792f718a6c2cc1/jackson-datatype-jdk8-2.9.7.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.9.7/cbd919f1ce67533e07b98dd493247e8dbabc26b2/jackson-datatype-jsr310-2.9.7.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-parameter-names/2.9.7/f2bdd7696beffa2dbc5dc62cd24c3906a40ffcff/jackson-module-parameter-names-2.9.7.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.9.7/e6faad47abd3179666e89068485a1b88a195ceb7/jackson-databind-2.9.7.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/9.0.12/b55259721a6f872107e0299a19bd1ed3998168ef/tomcat-embed-websocket-9.0.12.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.12/136c8dc5c84e82bf2d68bb10648d4fa8b402184/tomcat-embed-core-9.0.12.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/9.0.12/8ee44bee76043321860cde871cf6343de1483ff5/tomcat-embed-el-9.0.12.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/2.0.1.Final/cb855558e6271b1b32e716d24cb85c7f583ce09e/validation-api-2.0.1.Final.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.1.2.RELEASE/f0d7165b6cfb90356da4f25b14a6437fdef1ec8a/spring-jcl-5.1.2.RELEASE.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.9.0/7c10d545325e3a6e72e06381afe469fd40eb701/jackson-annotations-2.9.0.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.9.7/4b7f0e0dc527fab032e9800ed231080fdc3ac015/jackson-core-2.9.7.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.3/864344400c3d4d92dfeb0a305dc87d953677c03c/logback-core-1.2.3.jar:/Users/linguangxiong/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.11.1/268f0fe4df3eefe052b57c87ec48517d64fb2a10/log4j-api-2.11.1.jar:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, catalina.useNaming=false, java.vendor.url=http://java.oracle.com/, user.timezone=Asia/Shanghai, os.name=Mac OS X, java.vm.specification.version=1.8, javax.persistence.validation.mode=AUTO, sun.java.launcher=SUN_STANDARD, user.country=CN, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib, com.sun.management.jmxremote.ssl=false, spring.application.admin.enabled=true, sun.java.command=com.oocl.web.sampleWebApp.SampleWebAppApplication, hibernate.transaction.jta.platform=org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform@6737e0b4, com.sun.management.jmxremote=, javax.persistence.sharedCache.mode=UNSPECIFIED, spring.liveBeansView.mbeanDomain=, sun.cpu.endian=little, user.home=/Users/linguangxiong, user.language=zh, java.specification.vendor=Oracle Corporation, java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre, spring.output.ansi.enabled=always, file.separator=/, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, java.awt.headless=true, sun.boot.class.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/classes, hibernate.hbm2ddl.auto=update, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=1.8.0_74-b02, user.name=linguangxiong, path.separator=:, os.version=10.12.6, java.endorsed.dirs=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/endorsed, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.ejb.persistenceUnitName=default, file.encoding=UTF-8, spring.beaninfo.ignore=true, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, LOG_FILE=logs/application.log, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, java.io.tmpdir=/var/folders/32/6pxmxb1d0fs1kn8j1m5vk04c0000gn/T/, com.zaxxer.hikari.pool_number=1, catalina.home=/private/var/folders/32/6pxmxb1d0fs1kn8j1m5vk04c0000gn/T/tomcat.1153188748024668518.8080, com.sun.management.jmxremote.port=60513, java.version=1.8.0_74, hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy, user.dir=/Users/linguangxiong/Documents/OOCL工作内容/线下训练营/java/Parking-Lot-Template-2019-7-18-8-5-49-775, os.arch=x86_64, PID=6546, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, sun.os.patch.level=unknown, catalina.base=/private/var/folders/32/6pxmxb1d0fs1kn8j1m5vk04c0000gn/T/tomcat.1153188748024668518.8080, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@2dd60b5, java.library.path=/Users/linguangxiong/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=25.74-b02, hibernate.bytecode.use_reflection_optimizer=false, java.rmi.server.randomIDs=true, java.rmi.server.hostname=127.0.0.1, hibernate.connection.datasource=HikariDataSource (HikariPool-1), sun.io.unicode.encoding=UnicodeBig, java.ext.dirs=/Users/linguangxiong/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java, java.class.version=52.0}
+2019-07-20 17:12:09.599 DEBUG 6546 --- [restartedMain] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-07-20 17:12:09.600 DEBUG 6546 --- [restartedMain] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-07-20 17:12:09.600 DEBUG 6546 --- [restartedMain] o.h.v.i.xml.config.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-07-20 17:12:09.600 DEBUG 6546 --- [restartedMain] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2019-07-20 17:12:09.600 DEBUG 6546 --- [restartedMain] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-07-20 17:12:09.600 DEBUG 6546 --- [restartedMain] o.h.v.i.xml.config.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2019-07-20 17:12:09.607 DEBUG 6546 --- [restartedMain] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-07-20 17:12:09.608 DEBUG 6546 --- [restartedMain] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-07-20 17:12:09.608 DEBUG 6546 --- [restartedMain] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-07-20 17:12:09.608 DEBUG 6546 --- [restartedMain] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-07-20 17:12:09.608 DEBUG 6546 --- [restartedMain] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-07-20 17:12:09.608 DEBUG 6546 --- [restartedMain] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-07-20 17:12:09.609 DEBUG 6546 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot] is safe
+2019-07-20 17:12:09.610 DEBUG 6546 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot
+2019-07-20 17:12:09.679 DEBUG 6546 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [com.oocl.web.sampleWebApp.jpaSample.pojo.Order] is safe
+2019-07-20 17:12:09.679 DEBUG 6546 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.oocl.web.sampleWebApp.jpaSample.pojo.Order
+2019-07-20 17:12:09.687 DEBUG 6546 --- [restartedMain] org.hibernate.secure.spi.JaccIntegrator  : Skipping JACC integration as it was not enabled
+2019-07-20 17:12:09.688 DEBUG 6546 --- [restartedMain] o.hibernate.internal.SessionFactoryImpl  : Instantiated session factory
+2019-07-20 17:12:09.688 DEBUG 6546 --- [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@73af6c29] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@4a7d7fdf]
+2019-07-20 17:12:09.713 DEBUG 6546 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot] is safe
+2019-07-20 17:12:09.714 DEBUG 6546 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot
+2019-07-20 17:12:09.731 DEBUG 6546 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot] is safe
+2019-07-20 17:12:09.731 DEBUG 6546 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot
+2019-07-20 17:12:09.938 DEBUG 6546 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [com.oocl.web.sampleWebApp.jpaSample.pojo.Order] is safe
+2019-07-20 17:12:09.938 DEBUG 6546 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.oocl.web.sampleWebApp.jpaSample.pojo.Order
+2019-07-20 17:12:09.938 DEBUG 6546 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [com.oocl.web.sampleWebApp.jpaSample.pojo.Order] is safe
+2019-07-20 17:12:09.938 DEBUG 6546 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.oocl.web.sampleWebApp.jpaSample.pojo.Order
+2019-07-20 17:12:09.965 DEBUG 6546 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     : Static SQL for entity: com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot
+2019-07-20 17:12:09.965 DEBUG 6546 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Version select: select id from parkinglot where id =?
+2019-07-20 17:12:09.965 DEBUG 6546 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Snapshot select: select parkinglot_.id, parkinglot_.capacity as capacity2_1_, parkinglot_.index as index3_1_, parkinglot_.name as name4_1_ from parkinglot parkinglot_ where parkinglot_.id=?
+2019-07-20 17:12:09.965 DEBUG 6546 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Insert 0: insert into parkinglot (capacity, index, name, id) values (?, ?, ?, ?)
+2019-07-20 17:12:09.965 DEBUG 6546 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Update 0: update parkinglot set capacity=?, index=?, name=? where id=?
+2019-07-20 17:12:09.965 DEBUG 6546 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Delete 0: delete from parkinglot where id=?
+2019-07-20 17:12:09.988 DEBUG 6546 --- [restartedMain] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5a15db7e]
+2019-07-20 17:12:09.990 DEBUG 6546 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : capacity
+2019-07-20 17:12:09.990 DEBUG 6546 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : index
+2019-07-20 17:12:09.990 DEBUG 6546 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : name
+2019-07-20 17:12:09.990 DEBUG 6546 --- [restartedMain] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2019-07-20 17:12:09.999 DEBUG 6546 --- [restartedMain] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2019-07-20 17:12:10.003 DEBUG 6546 --- [restartedMain] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot)
+    - Returns
+       - EntityReturnImpl(entity=com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot, querySpaceUid=<gen:0>, path=com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot)
+          - SQL table alias mapping - parkinglot0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2019-07-20 17:12:10.007 DEBUG 6546 --- [restartedMain] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot [NONE]: select parkinglot0_.id as id1_1_0_, parkinglot0_.capacity as capacity2_1_0_, parkinglot0_.index as index3_1_0_, parkinglot0_.name as name4_1_0_ from parkinglot parkinglot0_ where parkinglot0_.id=?
+2019-07-20 17:12:10.007 DEBUG 6546 --- [restartedMain] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5d6317b0]
+2019-07-20 17:12:10.007 DEBUG 6546 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : capacity
+2019-07-20 17:12:10.007 DEBUG 6546 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : index
+2019-07-20 17:12:10.007 DEBUG 6546 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : name
+2019-07-20 17:12:10.008 DEBUG 6546 --- [restartedMain] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2019-07-20 17:12:10.008 DEBUG 6546 --- [restartedMain] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2019-07-20 17:12:10.008 DEBUG 6546 --- [restartedMain] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot)
+    - Returns
+       - EntityReturnImpl(entity=com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot, querySpaceUid=<gen:0>, path=com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot)
+          - SQL table alias mapping - parkinglot0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2019-07-20 17:12:10.009 DEBUG 6546 --- [restartedMain] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot [READ]: select parkinglot0_.id as id1_1_0_, parkinglot0_.capacity as capacity2_1_0_, parkinglot0_.index as index3_1_0_, parkinglot0_.name as name4_1_0_ from parkinglot parkinglot0_ where parkinglot0_.id=?
+2019-07-20 17:12:10.023 DEBUG 6546 --- [restartedMain] org.hibernate.loader.Loader              : Static select for action ACTION_MERGE on entity com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot: select parkinglot0_.id as id1_1_0_, parkinglot0_.capacity as capacity2_1_0_, parkinglot0_.index as index3_1_0_, parkinglot0_.name as name4_1_0_ from parkinglot parkinglot0_ where parkinglot0_.id=?
+2019-07-20 17:12:10.024 DEBUG 6546 --- [restartedMain] org.hibernate.loader.Loader              : Static select for action ACTION_REFRESH on entity com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot: select parkinglot0_.id as id1_1_0_, parkinglot0_.capacity as capacity2_1_0_, parkinglot0_.index as index3_1_0_, parkinglot0_.name as name4_1_0_ from parkinglot parkinglot0_ where parkinglot0_.id=?
+2019-07-20 17:12:10.024 DEBUG 6546 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     : Static SQL for entity: com.oocl.web.sampleWebApp.jpaSample.pojo.Order
+2019-07-20 17:12:10.024 DEBUG 6546 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Version select: select id from order where id =?
+2019-07-20 17:12:10.024 DEBUG 6546 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Snapshot select: select order_.id, order_.car_num as car_num2_0_, order_.create_date as create_d3_0_, order_.end_date as end_date4_0_, order_.order_num as order_nu5_0_, order_.parking_name as parking_6_0_, order_.state as state7_0_ from order order_ where order_.id=?
+2019-07-20 17:12:10.024 DEBUG 6546 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Insert 0: insert into order (car_num, create_date, end_date, order_num, parking_name, state, id) values (?, ?, ?, ?, ?, ?, ?)
+2019-07-20 17:12:10.025 DEBUG 6546 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Update 0: update order set car_num=?, create_date=?, end_date=?, order_num=?, parking_name=?, state=? where id=?
+2019-07-20 17:12:10.025 DEBUG 6546 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Delete 0: delete from order where id=?
+2019-07-20 17:12:10.025 DEBUG 6546 --- [restartedMain] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1e4e4bf5]
+2019-07-20 17:12:10.025 DEBUG 6546 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : carNum
+2019-07-20 17:12:10.025 DEBUG 6546 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : createDate
+2019-07-20 17:12:10.025 DEBUG 6546 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : endDate
+2019-07-20 17:12:10.025 DEBUG 6546 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : orderNum
+2019-07-20 17:12:10.025 DEBUG 6546 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : parkingName
+2019-07-20 17:12:10.025 DEBUG 6546 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : state
+2019-07-20 17:12:10.025 DEBUG 6546 --- [restartedMain] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2019-07-20 17:12:10.025 DEBUG 6546 --- [restartedMain] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2019-07-20 17:12:10.025 DEBUG 6546 --- [restartedMain] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.oocl.web.sampleWebApp.jpaSample.pojo.Order)
+    - Returns
+       - EntityReturnImpl(entity=com.oocl.web.sampleWebApp.jpaSample.pojo.Order, querySpaceUid=<gen:0>, path=com.oocl.web.sampleWebApp.jpaSample.pojo.Order)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.oocl.web.sampleWebApp.jpaSample.pojo.Order)
+          - SQL table alias mapping - order0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2019-07-20 17:12:10.026 DEBUG 6546 --- [restartedMain] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.oocl.web.sampleWebApp.jpaSample.pojo.Order [NONE]: select order0_.id as id1_0_0_, order0_.car_num as car_num2_0_0_, order0_.create_date as create_d3_0_0_, order0_.end_date as end_date4_0_0_, order0_.order_num as order_nu5_0_0_, order0_.parking_name as parking_6_0_0_, order0_.state as state7_0_0_ from order order0_ where order0_.id=?
+2019-07-20 17:12:10.026 DEBUG 6546 --- [restartedMain] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4f14a8ab]
+2019-07-20 17:12:10.026 DEBUG 6546 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : carNum
+2019-07-20 17:12:10.026 DEBUG 6546 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : createDate
+2019-07-20 17:12:10.026 DEBUG 6546 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : endDate
+2019-07-20 17:12:10.026 DEBUG 6546 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : orderNum
+2019-07-20 17:12:10.026 DEBUG 6546 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : parkingName
+2019-07-20 17:12:10.026 DEBUG 6546 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : state
+2019-07-20 17:12:10.026 DEBUG 6546 --- [restartedMain] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2019-07-20 17:12:10.026 DEBUG 6546 --- [restartedMain] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2019-07-20 17:12:10.026 DEBUG 6546 --- [restartedMain] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.oocl.web.sampleWebApp.jpaSample.pojo.Order)
+    - Returns
+       - EntityReturnImpl(entity=com.oocl.web.sampleWebApp.jpaSample.pojo.Order, querySpaceUid=<gen:0>, path=com.oocl.web.sampleWebApp.jpaSample.pojo.Order)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.oocl.web.sampleWebApp.jpaSample.pojo.Order)
+          - SQL table alias mapping - order0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2019-07-20 17:12:10.027 DEBUG 6546 --- [restartedMain] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.oocl.web.sampleWebApp.jpaSample.pojo.Order [READ]: select order0_.id as id1_0_0_, order0_.car_num as car_num2_0_0_, order0_.create_date as create_d3_0_0_, order0_.end_date as end_date4_0_0_, order0_.order_num as order_nu5_0_0_, order0_.parking_name as parking_6_0_0_, order0_.state as state7_0_0_ from order order0_ where order0_.id=?
+2019-07-20 17:12:10.027 DEBUG 6546 --- [restartedMain] org.hibernate.loader.Loader              : Static select for action ACTION_MERGE on entity com.oocl.web.sampleWebApp.jpaSample.pojo.Order: select order0_.id as id1_0_0_, order0_.car_num as car_num2_0_0_, order0_.create_date as create_d3_0_0_, order0_.end_date as end_date4_0_0_, order0_.order_num as order_nu5_0_0_, order0_.parking_name as parking_6_0_0_, order0_.state as state7_0_0_ from order order0_ where order0_.id=?
+2019-07-20 17:12:10.027 DEBUG 6546 --- [restartedMain] org.hibernate.loader.Loader              : Static select for action ACTION_REFRESH on entity com.oocl.web.sampleWebApp.jpaSample.pojo.Order: select order0_.id as id1_0_0_, order0_.car_num as car_num2_0_0_, order0_.create_date as create_d3_0_0_, order0_.end_date as end_date4_0_0_, order0_.order_num as order_nu5_0_0_, order0_.parking_name as parking_6_0_0_, order0_.state as state7_0_0_ from order order0_ where order0_.id=?
+2019-07-20 17:12:10.115 DEBUG 6546 --- [restartedMain] org.hibernate.mapping.Table              : No alter strings for table : order
+2019-07-20 17:12:10.115 DEBUG 6546 --- [restartedMain] org.hibernate.mapping.Table              : No alter strings for table : parkinglot
+2019-07-20 17:12:10.117 DEBUG 6546 --- [restartedMain] o.h.query.spi.NamedQueryRepository       : Checking 0 named HQL queries
+2019-07-20 17:12:10.117 DEBUG 6546 --- [restartedMain] o.h.query.spi.NamedQueryRepository       : Checking 0 named SQL queries
+2019-07-20 17:12:10.118 DEBUG 6546 --- [restartedMain] o.h.internal.SessionFactoryRegistry      : Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@49926e4e
+2019-07-20 17:12:10.118 DEBUG 6546 --- [restartedMain] o.h.internal.SessionFactoryRegistry      : Registering SessionFactory: 5aeab13c-8ffc-4b7e-819a-02380cfcaa91 (<unnamed>)
+2019-07-20 17:12:10.118 DEBUG 6546 --- [restartedMain] o.h.internal.SessionFactoryRegistry      : Not binding SessionFactory to JNDI, no JNDI name configured
+2019-07-20 17:12:10.118  INFO 6546 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 17:12:10.164  INFO 6546 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-07-20 17:12:10.339 DEBUG 6546 --- [restartedMain] o.h.stat.internal.StatisticsInitiator    : Statistics initialized [enabled=false]
+2019-07-20 17:12:10.483 DEBUG 6546 --- [restartedMain] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2019-07-20 17:12:10.554 DEBUG 6546 --- [restartedMain] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-07-20 17:12:10.554 DEBUG 6546 --- [restartedMain] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-07-20 17:12:10.554 DEBUG 6546 --- [restartedMain] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-07-20 17:12:10.557 DEBUG 6546 --- [restartedMain] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-07-20 17:12:10.557 DEBUG 6546 --- [restartedMain] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-07-20 17:12:10.558 DEBUG 6546 --- [restartedMain] o.h.v.internal.engine.ConfigurationImpl  : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-07-20 17:12:10.558 DEBUG 6546 --- [restartedMain] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-07-20 17:12:10.558 DEBUG 6546 --- [restartedMain] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2019-07-20 17:12:10.559 DEBUG 6546 --- [restartedMain] o.h.v.i.xml.config.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-07-20 17:12:10.559 DEBUG 6546 --- [restartedMain] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via user class loader
+2019-07-20 17:12:10.560 DEBUG 6546 --- [restartedMain] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2019-07-20 17:12:10.560 DEBUG 6546 --- [restartedMain] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-07-20 17:12:10.560 DEBUG 6546 --- [restartedMain] o.h.v.i.xml.config.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2019-07-20 17:12:10.564 DEBUG 6546 --- [restartedMain] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-07-20 17:12:10.564 DEBUG 6546 --- [restartedMain] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-07-20 17:12:10.564 DEBUG 6546 --- [restartedMain] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-07-20 17:12:10.564 DEBUG 6546 --- [restartedMain] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-07-20 17:12:10.564 DEBUG 6546 --- [restartedMain] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-07-20 17:12:10.592 DEBUG 6546 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-20 17:12:10.817  INFO 6546 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-20 17:12:10.833 DEBUG 6546 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
+2019-07-20 17:12:10.863  WARN 6546 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-20 17:12:10.894 DEBUG 6546 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2019-07-20 17:12:10.905 DEBUG 6546 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-20 17:12:10.914 DEBUG 6546 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-20 17:12:11.070  INFO 6546 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-07-20 17:12:11.076  INFO 6546 --- [restartedMain] c.o.w.s.SampleWebAppApplication          : Started SampleWebAppApplication in 5.175 seconds (JVM running for 6.43)
+2019-07-20 17:12:39.881  INFO 6546 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-20 17:12:39.882  INFO 6546 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-20 17:12:39.883 DEBUG 6546 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-07-20 17:12:39.893 DEBUG 6546 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-07-20 17:12:39.893  INFO 6546 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-07-20 17:12:39.901 DEBUG 6546 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/parkinglots?page=0&size=10&", parameters={masked}
+2019-07-20 17:12:39.906 DEBUG 6546 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.util.List<com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot> com.oocl.web.sampleWebApp.jpaSample.controller.ParkinglotController.getParkinglotsByPage(int,int)
+2019-07-20 17:12:39.950 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2019-07-20 17:12:39.950 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.e.t.internal.TransactionImpl         : begin
+2019-07-20 17:12:39.957 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.q.c.internal.CriteriaQueryImpl       : Rendered criteria query -> select generatedAlias0 from Parkinglot as generatedAlias0 order by generatedAlias0.id asc
+2019-07-20 17:12:39.977 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : QueryTranslatorFactory : org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@5951e046
+2019-07-20 17:12:39.977  INFO 6546 --- [http-nio-8080-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-07-20 17:12:40.001 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.h.internal.ast.QueryTranslatorImpl   : parse() - HQL: select generatedAlias0 from com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot as generatedAlias0 order by generatedAlias0.id asc
+2019-07-20 17:12:40.009 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.hql.internal.ast.ErrorTracker        : throwQueryException() : no errors
+2019-07-20 17:12:40.019 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.h.internal.ast.QueryTranslatorImpl   : --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'from'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[DOT] Node: '.'
+    |  |     |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  |  |  +-[IDENT] Node: 'com'
+    |  |     |  |  |  |  |  |  \-[IDENT] Node: 'oocl'
+    |  |     |  |  |  |  |  \-[IDENT] Node: 'web'
+    |  |     |  |  |  |  \-[IDENT] Node: 'sampleWebApp'
+    |  |     |  |  |  \-[IDENT] Node: 'jpaSample'
+    |  |     |  |  \-[IDENT] Node: 'pojo'
+    |  |     |  \-[IDENT] Node: 'Parkinglot'
+    |  |     \-[ALIAS] Node: 'generatedAlias0'
+    |  \-[SELECT] Node: 'select'
+    |     \-[IDENT] Node: 'generatedAlias0'
+    \-[ORDER] Node: 'order'
+       +-[DOT] Node: '.'
+       |  +-[IDENT] Node: 'generatedAlias0'
+       |  \-[IDENT] Node: 'id'
+       \-[ASCENDING] Node: 'asc'
+
+2019-07-20 17:12:40.037 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.hql.internal.antlr.HqlSqlBaseWalker  : select << begin [level=1, statement=select]
+2019-07-20 17:12:40.052 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.hql.internal.ast.tree.FromElement    : FromClause{level=1} : com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot (generatedAlias0) -> parkinglot0_
+2019-07-20 17:12:40.053 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.h.i.ast.tree.FromReferenceNode       : Resolved : generatedAlias0 -> parkinglot0_.id
+2019-07-20 17:12:40.055 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.h.i.ast.tree.FromReferenceNode       : Resolved : generatedAlias0 -> parkinglot0_.id
+2019-07-20 17:12:40.057 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.hql.internal.ast.tree.DotNode        : getDataType() : id -> org.hibernate.type.LongType@a8b24d5
+2019-07-20 17:12:40.058 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.h.i.ast.tree.FromReferenceNode       : Resolved : generatedAlias0.id -> parkinglot0_.id
+2019-07-20 17:12:40.058 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.hql.internal.antlr.HqlSqlBaseWalker  : select : finishing up [level=1, statement=select]
+2019-07-20 17:12:40.058 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.hql.internal.ast.HqlSqlWalker        : processQuery() :  ( SELECT ( {select clause} parkinglot0_.id ) ( FromClause{level=1} parkinglot parkinglot0_ ) ( order ( parkinglot0_.id parkinglot0_.id id ) asc ) )
+2019-07-20 17:12:40.066 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.hql.internal.ast.util.JoinProcessor  : Using FROM fragment [parkinglot parkinglot0_]
+2019-07-20 17:12:40.066 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.hql.internal.antlr.HqlSqlBaseWalker  : select >> end [level=1, statement=select]
+2019-07-20 17:12:40.067 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.h.internal.ast.QueryTranslatorImpl   : --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (parkinglot)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'parkinglot0_.id as id1_1_' {alias=generatedAlias0, className=com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot, tableAlias=parkinglot0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'parkinglot0_.capacity as capacity2_1_, parkinglot0_.index as index3_1_, parkinglot0_.name as name4_1_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[parkinglot0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'parkinglot parkinglot0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=parkinglot,tableAlias=parkinglot0_,origin=null,columns={,className=com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot}}
+    \-[ORDER] OrderByClause: 'order'
+       +-[DOT] DotNode: 'parkinglot0_.id' {propertyName=id,dereferenceType=PRIMITIVE,getPropertyPath=id,path=generatedAlias0.id,tableAlias=parkinglot0_,className=com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot,classAlias=generatedAlias0}
+       |  +-[ALIAS_REF] IdentNode: 'parkinglot0_.id' {alias=generatedAlias0, className=com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot, tableAlias=parkinglot0_}
+       |  \-[IDENT] IdentNode: 'id' {originalText=id}
+       \-[ASCENDING] SqlNode: 'asc'
+
+2019-07-20 17:12:40.067 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.hql.internal.ast.ErrorTracker        : throwQueryException() : no errors
+2019-07-20 17:12:40.072 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.h.internal.ast.QueryTranslatorImpl   : HQL: select generatedAlias0 from com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot as generatedAlias0 order by generatedAlias0.id asc
+2019-07-20 17:12:40.072 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.h.internal.ast.QueryTranslatorImpl   : SQL: select parkinglot0_.id as id1_1_, parkinglot0_.capacity as capacity2_1_, parkinglot0_.index as index3_1_, parkinglot0_.name as name4_1_ from parkinglot parkinglot0_ order by parkinglot0_.id asc
+2019-07-20 17:12:40.072 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.hql.internal.ast.ErrorTracker        : throwQueryException() : no errors
+2019-07-20 17:12:40.093 DEBUG 6546 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select parkinglot0_.id as id1_1_, parkinglot0_.capacity as capacity2_1_, parkinglot0_.index as index3_1_, parkinglot0_.name as name4_1_ from parkinglot parkinglot0_ order by parkinglot0_.id asc limit ?
+2019-07-20 17:12:40.103 DEBUG 6546 --- [http-nio-8080-exec-2] org.hibernate.loader.Loader              : Result set row: 0
+2019-07-20 17:12:40.106 DEBUG 6546 --- [http-nio-8080-exec-2] org.hibernate.loader.Loader              : Result row: EntityKey[com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#3]
+2019-07-20 17:12:40.159 DEBUG 6546 --- [http-nio-8080-exec-2] org.hibernate.loader.Loader              : Result set row: 1
+2019-07-20 17:12:40.160 DEBUG 6546 --- [http-nio-8080-exec-2] org.hibernate.loader.Loader              : Result row: EntityKey[com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#4]
+2019-07-20 17:12:40.162 DEBUG 6546 --- [http-nio-8080-exec-2] org.hibernate.loader.Loader              : Result set row: 2
+2019-07-20 17:12:40.163 DEBUG 6546 --- [http-nio-8080-exec-2] org.hibernate.loader.Loader              : Result row: EntityKey[com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#5]
+2019-07-20 17:12:40.163 DEBUG 6546 --- [http-nio-8080-exec-2] org.hibernate.loader.Loader              : Result set row: 3
+2019-07-20 17:12:40.163 DEBUG 6546 --- [http-nio-8080-exec-2] org.hibernate.loader.Loader              : Result row: EntityKey[com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#6]
+2019-07-20 17:12:40.163 DEBUG 6546 --- [http-nio-8080-exec-2] org.hibernate.loader.Loader              : Result set row: 4
+2019-07-20 17:12:40.163 DEBUG 6546 --- [http-nio-8080-exec-2] org.hibernate.loader.Loader              : Result row: EntityKey[com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#7]
+2019-07-20 17:12:40.165 DEBUG 6546 --- [http-nio-8080-exec-2] org.hibernate.loader.Loader              : Result set row: 5
+2019-07-20 17:12:40.165 DEBUG 6546 --- [http-nio-8080-exec-2] org.hibernate.loader.Loader              : Result row: EntityKey[com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#8]
+2019-07-20 17:12:40.165 DEBUG 6546 --- [http-nio-8080-exec-2] org.hibernate.loader.Loader              : Result set row: 6
+2019-07-20 17:12:40.165 DEBUG 6546 --- [http-nio-8080-exec-2] org.hibernate.loader.Loader              : Result row: EntityKey[com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#9]
+2019-07-20 17:12:40.165 DEBUG 6546 --- [http-nio-8080-exec-2] org.hibernate.loader.Loader              : Result set row: 7
+2019-07-20 17:12:40.166 DEBUG 6546 --- [http-nio-8080-exec-2] org.hibernate.loader.Loader              : Result row: EntityKey[com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#10]
+2019-07-20 17:12:40.167 DEBUG 6546 --- [http-nio-8080-exec-2] org.hibernate.loader.Loader              : Result set row: 8
+2019-07-20 17:12:40.167 DEBUG 6546 --- [http-nio-8080-exec-2] org.hibernate.loader.Loader              : Result row: EntityKey[com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#11]
+2019-07-20 17:12:40.167 DEBUG 6546 --- [http-nio-8080-exec-2] org.hibernate.loader.Loader              : Result set row: 9
+2019-07-20 17:12:40.168 DEBUG 6546 --- [http-nio-8080-exec-2] org.hibernate.loader.Loader              : Result row: EntityKey[com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#12]
+2019-07-20 17:12:40.173 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#3]
+2019-07-20 17:12:40.176 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#3]
+2019-07-20 17:12:40.176 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#4]
+2019-07-20 17:12:40.177 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#4]
+2019-07-20 17:12:40.177 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#5]
+2019-07-20 17:12:40.177 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#5]
+2019-07-20 17:12:40.178 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#6]
+2019-07-20 17:12:40.179 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#6]
+2019-07-20 17:12:40.179 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#7]
+2019-07-20 17:12:40.179 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#7]
+2019-07-20 17:12:40.179 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#8]
+2019-07-20 17:12:40.180 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#8]
+2019-07-20 17:12:40.182 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#9]
+2019-07-20 17:12:40.182 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#9]
+2019-07-20 17:12:40.182 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#10]
+2019-07-20 17:12:40.183 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#10]
+2019-07-20 17:12:40.184 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#11]
+2019-07-20 17:12:40.184 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#11]
+2019-07-20 17:12:40.184 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#12]
+2019-07-20 17:12:40.184 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#12]
+2019-07-20 17:12:40.230 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.q.c.internal.CriteriaQueryImpl       : Rendered criteria query -> select count(generatedAlias0) from Parkinglot as generatedAlias0
+2019-07-20 17:12:40.230 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.h.internal.ast.QueryTranslatorImpl   : parse() - HQL: select count(generatedAlias0) from com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot as generatedAlias0
+2019-07-20 17:12:40.231 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.hql.internal.ast.ErrorTracker        : throwQueryException() : no errors
+2019-07-20 17:12:40.232 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.h.internal.ast.QueryTranslatorImpl   : --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'from'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[DOT] Node: '.'
+       |     |  |  |  |  +-[DOT] Node: '.'
+       |     |  |  |  |  |  +-[DOT] Node: '.'
+       |     |  |  |  |  |  |  +-[IDENT] Node: 'com'
+       |     |  |  |  |  |  |  \-[IDENT] Node: 'oocl'
+       |     |  |  |  |  |  \-[IDENT] Node: 'web'
+       |     |  |  |  |  \-[IDENT] Node: 'sampleWebApp'
+       |     |  |  |  \-[IDENT] Node: 'jpaSample'
+       |     |  |  \-[IDENT] Node: 'pojo'
+       |     |  \-[IDENT] Node: 'Parkinglot'
+       |     \-[ALIAS] Node: 'generatedAlias0'
+       \-[SELECT] Node: 'select'
+          \-[COUNT] Node: 'count'
+             \-[IDENT] Node: 'generatedAlias0'
+
+2019-07-20 17:12:40.232 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.hql.internal.antlr.HqlSqlBaseWalker  : select << begin [level=1, statement=select]
+2019-07-20 17:12:40.233 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.hql.internal.ast.tree.FromElement    : FromClause{level=1} : com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot (generatedAlias0) -> parkinglot0_
+2019-07-20 17:12:40.233 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.h.i.ast.tree.FromReferenceNode       : Resolved : generatedAlias0 -> parkinglot0_.id
+2019-07-20 17:12:40.233 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.hql.internal.antlr.HqlSqlBaseWalker  : select : finishing up [level=1, statement=select]
+2019-07-20 17:12:40.234 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.hql.internal.ast.HqlSqlWalker        : processQuery() :  ( SELECT ( {select clause} ( count parkinglot0_.id ) ) ( FromClause{level=1} parkinglot parkinglot0_ ) )
+2019-07-20 17:12:40.234 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.hql.internal.ast.util.JoinProcessor  : Using FROM fragment [parkinglot parkinglot0_]
+2019-07-20 17:12:40.234 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.hql.internal.antlr.HqlSqlBaseWalker  : select >> end [level=1, statement=select]
+2019-07-20 17:12:40.234 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.h.internal.ast.QueryTranslatorImpl   : --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (parkinglot)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[COUNT] CountNode: 'count'
+    |  |  \-[ALIAS_REF] IdentNode: 'parkinglot0_.id' {alias=generatedAlias0, className=com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot, tableAlias=parkinglot0_}
+    |  \-[SELECT_COLUMNS] SqlNode: ' as col_0_0_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[parkinglot0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'parkinglot parkinglot0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=parkinglot,tableAlias=parkinglot0_,origin=null,columns={,className=com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot}}
+
+2019-07-20 17:12:40.234 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.hql.internal.ast.ErrorTracker        : throwQueryException() : no errors
+2019-07-20 17:12:40.235 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.h.internal.ast.QueryTranslatorImpl   : HQL: select count(generatedAlias0) from com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot as generatedAlias0
+2019-07-20 17:12:40.235 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.h.internal.ast.QueryTranslatorImpl   : SQL: select count(parkinglot0_.id) as col_0_0_ from parkinglot parkinglot0_
+2019-07-20 17:12:40.235 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.hql.internal.ast.ErrorTracker        : throwQueryException() : no errors
+2019-07-20 17:12:40.236 DEBUG 6546 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select count(parkinglot0_.id) as col_0_0_ from parkinglot parkinglot0_
+2019-07-20 17:12:40.238 DEBUG 6546 --- [http-nio-8080-exec-2] org.hibernate.loader.Loader              : Result set row: 0
+2019-07-20 17:12:40.241 DEBUG 6546 --- [http-nio-8080-exec-2] org.hibernate.loader.Loader              : Result row: 
+2019-07-20 17:12:40.270 DEBUG 6546 --- [http-nio-8080-exec-2] o.h.e.t.internal.TransactionImpl         : committing
+2019-07-20 17:12:40.334 DEBUG 6546 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-20 17:12:40.336 DEBUG 6546 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Parkinglot(id=3, name=test0, capacity=10, index=10), Parkinglot(id=4, name=test1, capacity=10, index=11), Parkinglot(id=5, name=test2, capacity=10, index=12), Parkinglot(id=6, name=test3, capacity=10, index=13), Parkinglot(id=7, name=test4, capacity=10, index=14), Parkinglot(id=8, name=test5, capacity=10, index=15), Parkinglot(id=9, name=test6, capacity=10, index=16), Parkinglot(id=10, name=test7, capacity=10, index=17), Parkinglot(id=11, name=test8, capacity=10, index=18), Parkinglot(id=12, name=test9, capacity=10, index=19)]]
+2019-07-20 17:12:40.620 DEBUG 6546 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-20 17:12:50.845 DEBUG 6546 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/parkinglots?page=1&size=10&", parameters={masked}
+2019-07-20 17:12:50.848 DEBUG 6546 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.util.List<com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot> com.oocl.web.sampleWebApp.jpaSample.controller.ParkinglotController.getParkinglotsByPage(int,int)
+2019-07-20 17:12:50.850 DEBUG 6546 --- [http-nio-8080-exec-3] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2019-07-20 17:12:50.850 DEBUG 6546 --- [http-nio-8080-exec-3] o.h.e.t.internal.TransactionImpl         : begin
+2019-07-20 17:12:50.850 DEBUG 6546 --- [http-nio-8080-exec-3] o.h.q.c.internal.CriteriaQueryImpl       : Rendered criteria query -> select generatedAlias0 from Parkinglot as generatedAlias0 order by generatedAlias0.id asc
+2019-07-20 17:12:50.851 DEBUG 6546 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select parkinglot0_.id as id1_1_, parkinglot0_.capacity as capacity2_1_, parkinglot0_.index as index3_1_, parkinglot0_.name as name4_1_ from parkinglot parkinglot0_ order by parkinglot0_.id asc limit ? offset ?
+2019-07-20 17:12:50.852 DEBUG 6546 --- [http-nio-8080-exec-3] org.hibernate.loader.Loader              : Result set row: 0
+2019-07-20 17:12:50.852 DEBUG 6546 --- [http-nio-8080-exec-3] org.hibernate.loader.Loader              : Result row: EntityKey[com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#13]
+2019-07-20 17:12:50.852 DEBUG 6546 --- [http-nio-8080-exec-3] org.hibernate.loader.Loader              : Result set row: 1
+2019-07-20 17:12:50.852 DEBUG 6546 --- [http-nio-8080-exec-3] org.hibernate.loader.Loader              : Result row: EntityKey[com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#14]
+2019-07-20 17:12:50.853 DEBUG 6546 --- [http-nio-8080-exec-3] org.hibernate.loader.Loader              : Result set row: 2
+2019-07-20 17:12:50.853 DEBUG 6546 --- [http-nio-8080-exec-3] org.hibernate.loader.Loader              : Result row: EntityKey[com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#15]
+2019-07-20 17:12:50.853 DEBUG 6546 --- [http-nio-8080-exec-3] org.hibernate.loader.Loader              : Result set row: 3
+2019-07-20 17:12:50.853 DEBUG 6546 --- [http-nio-8080-exec-3] org.hibernate.loader.Loader              : Result row: EntityKey[com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#16]
+2019-07-20 17:12:50.853 DEBUG 6546 --- [http-nio-8080-exec-3] org.hibernate.loader.Loader              : Result set row: 4
+2019-07-20 17:12:50.853 DEBUG 6546 --- [http-nio-8080-exec-3] org.hibernate.loader.Loader              : Result row: EntityKey[com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#17]
+2019-07-20 17:12:50.856 DEBUG 6546 --- [http-nio-8080-exec-3] org.hibernate.loader.Loader              : Result set row: 5
+2019-07-20 17:12:50.856 DEBUG 6546 --- [http-nio-8080-exec-3] org.hibernate.loader.Loader              : Result row: EntityKey[com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#18]
+2019-07-20 17:12:50.856 DEBUG 6546 --- [http-nio-8080-exec-3] org.hibernate.loader.Loader              : Result set row: 6
+2019-07-20 17:12:50.856 DEBUG 6546 --- [http-nio-8080-exec-3] org.hibernate.loader.Loader              : Result row: EntityKey[com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#19]
+2019-07-20 17:12:50.856 DEBUG 6546 --- [http-nio-8080-exec-3] org.hibernate.loader.Loader              : Result set row: 7
+2019-07-20 17:12:50.856 DEBUG 6546 --- [http-nio-8080-exec-3] org.hibernate.loader.Loader              : Result row: EntityKey[com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#20]
+2019-07-20 17:12:50.857 DEBUG 6546 --- [http-nio-8080-exec-3] org.hibernate.loader.Loader              : Result set row: 8
+2019-07-20 17:12:50.857 DEBUG 6546 --- [http-nio-8080-exec-3] org.hibernate.loader.Loader              : Result row: EntityKey[com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#21]
+2019-07-20 17:12:50.857 DEBUG 6546 --- [http-nio-8080-exec-3] org.hibernate.loader.Loader              : Result set row: 9
+2019-07-20 17:12:50.857 DEBUG 6546 --- [http-nio-8080-exec-3] org.hibernate.loader.Loader              : Result row: EntityKey[com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#22]
+2019-07-20 17:12:50.857 DEBUG 6546 --- [http-nio-8080-exec-3] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#13]
+2019-07-20 17:12:50.857 DEBUG 6546 --- [http-nio-8080-exec-3] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#13]
+2019-07-20 17:12:50.857 DEBUG 6546 --- [http-nio-8080-exec-3] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#14]
+2019-07-20 17:12:50.857 DEBUG 6546 --- [http-nio-8080-exec-3] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#14]
+2019-07-20 17:12:50.857 DEBUG 6546 --- [http-nio-8080-exec-3] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#15]
+2019-07-20 17:12:50.857 DEBUG 6546 --- [http-nio-8080-exec-3] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#15]
+2019-07-20 17:12:50.858 DEBUG 6546 --- [http-nio-8080-exec-3] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#16]
+2019-07-20 17:12:50.858 DEBUG 6546 --- [http-nio-8080-exec-3] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#16]
+2019-07-20 17:12:50.858 DEBUG 6546 --- [http-nio-8080-exec-3] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#17]
+2019-07-20 17:12:50.858 DEBUG 6546 --- [http-nio-8080-exec-3] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#17]
+2019-07-20 17:12:50.858 DEBUG 6546 --- [http-nio-8080-exec-3] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#18]
+2019-07-20 17:12:50.858 DEBUG 6546 --- [http-nio-8080-exec-3] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#18]
+2019-07-20 17:12:50.858 DEBUG 6546 --- [http-nio-8080-exec-3] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#19]
+2019-07-20 17:12:50.858 DEBUG 6546 --- [http-nio-8080-exec-3] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#19]
+2019-07-20 17:12:50.858 DEBUG 6546 --- [http-nio-8080-exec-3] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#20]
+2019-07-20 17:12:50.858 DEBUG 6546 --- [http-nio-8080-exec-3] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#20]
+2019-07-20 17:12:50.858 DEBUG 6546 --- [http-nio-8080-exec-3] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#21]
+2019-07-20 17:12:50.858 DEBUG 6546 --- [http-nio-8080-exec-3] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#21]
+2019-07-20 17:12:50.859 DEBUG 6546 --- [http-nio-8080-exec-3] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#22]
+2019-07-20 17:12:50.859 DEBUG 6546 --- [http-nio-8080-exec-3] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#22]
+2019-07-20 17:12:50.859 DEBUG 6546 --- [http-nio-8080-exec-3] o.h.q.c.internal.CriteriaQueryImpl       : Rendered criteria query -> select count(generatedAlias0) from Parkinglot as generatedAlias0
+2019-07-20 17:12:50.859 DEBUG 6546 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select count(parkinglot0_.id) as col_0_0_ from parkinglot parkinglot0_
+2019-07-20 17:12:50.859 DEBUG 6546 --- [http-nio-8080-exec-3] org.hibernate.loader.Loader              : Result set row: 0
+2019-07-20 17:12:50.860 DEBUG 6546 --- [http-nio-8080-exec-3] org.hibernate.loader.Loader              : Result row: 
+2019-07-20 17:12:50.860 DEBUG 6546 --- [http-nio-8080-exec-3] o.h.e.t.internal.TransactionImpl         : committing
+2019-07-20 17:12:50.864 DEBUG 6546 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-20 17:12:50.864 DEBUG 6546 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Parkinglot(id=13, name=test10, capacity=10, index=20), Parkinglot(id=14, name=test11, capacity=10, index=21), Parkinglot(id=15, name=test12, capacity=10, index=22), Parkinglot(id=16, name=test13, capacity=10, index=23), Parkinglot(id=17, name=test14, capacity=10, index=24), Parkinglot(id=18, name=test15, capacity=10, index=25), Parkinglot(id=19, name=test16, capacity=10, index=26), Parkinglot(id=20, name=test17, capacity=10, index=27), Parkinglot(id=21, name=test18, capacity=10, index=28), Parkinglot(id=22, name=test19, capacity=10, index=29)]]
+2019-07-20 17:12:50.868 DEBUG 6546 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-20 17:12:59.562 DEBUG 6546 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/parkinglots?page=2&size=10&", parameters={masked}
+2019-07-20 17:12:59.562 DEBUG 6546 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.util.List<com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot> com.oocl.web.sampleWebApp.jpaSample.controller.ParkinglotController.getParkinglotsByPage(int,int)
+2019-07-20 17:12:59.563 DEBUG 6546 --- [http-nio-8080-exec-4] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2019-07-20 17:12:59.563 DEBUG 6546 --- [http-nio-8080-exec-4] o.h.e.t.internal.TransactionImpl         : begin
+2019-07-20 17:12:59.563 DEBUG 6546 --- [http-nio-8080-exec-4] o.h.q.c.internal.CriteriaQueryImpl       : Rendered criteria query -> select generatedAlias0 from Parkinglot as generatedAlias0 order by generatedAlias0.id asc
+2019-07-20 17:12:59.564 DEBUG 6546 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select parkinglot0_.id as id1_1_, parkinglot0_.capacity as capacity2_1_, parkinglot0_.index as index3_1_, parkinglot0_.name as name4_1_ from parkinglot parkinglot0_ order by parkinglot0_.id asc limit ? offset ?
+2019-07-20 17:12:59.566 DEBUG 6546 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result set row: 0
+2019-07-20 17:12:59.566 DEBUG 6546 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result row: EntityKey[com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#28]
+2019-07-20 17:12:59.566 DEBUG 6546 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result set row: 1
+2019-07-20 17:12:59.566 DEBUG 6546 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result row: EntityKey[com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#29]
+2019-07-20 17:12:59.567 DEBUG 6546 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result set row: 2
+2019-07-20 17:12:59.567 DEBUG 6546 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result row: EntityKey[com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#30]
+2019-07-20 17:12:59.567 DEBUG 6546 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result set row: 3
+2019-07-20 17:12:59.567 DEBUG 6546 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result row: EntityKey[com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#31]
+2019-07-20 17:12:59.567 DEBUG 6546 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result set row: 4
+2019-07-20 17:12:59.567 DEBUG 6546 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result row: EntityKey[com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#32]
+2019-07-20 17:12:59.567 DEBUG 6546 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#28]
+2019-07-20 17:12:59.568 DEBUG 6546 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#28]
+2019-07-20 17:12:59.568 DEBUG 6546 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#29]
+2019-07-20 17:12:59.568 DEBUG 6546 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#29]
+2019-07-20 17:12:59.568 DEBUG 6546 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#30]
+2019-07-20 17:12:59.568 DEBUG 6546 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#30]
+2019-07-20 17:12:59.568 DEBUG 6546 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#31]
+2019-07-20 17:12:59.568 DEBUG 6546 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#31]
+2019-07-20 17:12:59.568 DEBUG 6546 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#32]
+2019-07-20 17:12:59.568 DEBUG 6546 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot#32]
+2019-07-20 17:12:59.568 DEBUG 6546 --- [http-nio-8080-exec-4] o.h.e.t.internal.TransactionImpl         : committing
+2019-07-20 17:12:59.569 DEBUG 6546 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-20 17:12:59.570 DEBUG 6546 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Parkinglot(id=28, name=leo, capacity=3, index=3), Parkinglot(id=29, name=jhdjfk, capacity=2, index=2), Parkinglot(id=30, name=leolll, capacity=6, index=4), Parkinglot(id=31, name=dhjkdh, capacity=4, index=6), Parkinglot(id=32, name=leo1222, capacity=10, index=1)]]
+2019-07-20 17:12:59.571 DEBUG 6546 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
