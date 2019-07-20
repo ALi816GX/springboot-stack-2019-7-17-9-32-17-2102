@@ -12,12 +12,12 @@ public class Constant {
 
 
 
-    public static final String AAA_SSS = "";
+    public static final int STATE_OK = 200;
     public static final String BBB = "";
     public static final String CCC = "";
     public static final String DDD = "";
 
 
-    
+
 
 }

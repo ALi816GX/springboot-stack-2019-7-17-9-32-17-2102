@@ -1,5 +1,6 @@
 package com.oocl.web.sampleWebApp.jpaSample.controller;
 
+import com.oocl.web.sampleWebApp.jpaSample.dic.Constant;
 import com.oocl.web.sampleWebApp.jpaSample.dto.ParkinglotDTO;
 import com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot;
 import com.oocl.web.sampleWebApp.jpaSample.repository.ParkinglotRepository;
@@ -44,6 +45,14 @@ public class ParkinglotController {
     }
 
 
+    @DeleteMapping("/{id}")
+    public int deleteParkinglots(@PathVariable int id) {
+
+        parkinglotRepository.deleteById((long) id);
+
+        return Constant.STATE_OK;
+
+    }
 
 
 
