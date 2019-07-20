@@ -1,13 +1,9 @@
 package com.oocl.web.sampleWebApp.jpaSample.repository;
 
-
 import com.oocl.web.sampleWebApp.jpaSample.pojo.Parkinglot;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
-
-import java.util.List;
 
 /**
  * Created with IDEA
@@ -25,5 +21,6 @@ public interface ParkinglotRepository extends JpaRepository<Parkinglot,Long> {
 
     @Override
     Page<Parkinglot> findAll(Pageable pageable);
+
 
 }

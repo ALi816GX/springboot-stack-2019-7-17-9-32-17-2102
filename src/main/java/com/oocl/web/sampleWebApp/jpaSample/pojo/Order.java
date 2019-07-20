@@ -35,7 +35,7 @@ public class Order {
 
     private String carNum;
 
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    //@DateTimeFormat(pattern = "yyyy-MM-dd")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone="GMT+8")
     private Date createDate;
 
@@ -54,4 +54,6 @@ public class Order {
         this.endDate = endDate;
         this.state = state;
     }
+
+
 }

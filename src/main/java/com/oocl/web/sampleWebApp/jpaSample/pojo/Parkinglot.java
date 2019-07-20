@@ -41,4 +41,6 @@ public class Parkinglot {
         this.capacity = capacity;
         this.index = index;
     }
+
+
 }
