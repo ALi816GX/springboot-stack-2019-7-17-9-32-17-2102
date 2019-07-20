@@ -38,6 +38,14 @@ public class OrderConroller {
 
     }
 
+    @PostMapping
+    public Order updateOrder(Order order) {
+
+
+        return orderRepository.save(order);
+
+    }
+
 
 
 
